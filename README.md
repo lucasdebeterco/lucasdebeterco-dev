@@ -8,4 +8,4 @@ development area.
 
 **(Project under development using Astro Framework)**
 
-(https://lucasdebeterco.dev)
+https://lucasdebeterco.dev
