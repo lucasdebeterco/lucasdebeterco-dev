@@ -1,10 +1,11 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Fira_Code } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-
+const fira_code = Fira_Code({
+    subsets: ['latin']
+})
 export const metadata: Metadata = {
     title: 'Lucas Debeterco',
     description: 'My personal website portfolio',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={fira_code.className}>{children}</body>
         </html>
     )
 }

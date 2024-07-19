@@ -7,7 +7,11 @@ const config: Config = {
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            boxShadow: {
+                overlay: '0 10px 30px -10px rgb(2 12 27 / 70%)'
+            }
+        },
     },
     plugins: [],
 }
