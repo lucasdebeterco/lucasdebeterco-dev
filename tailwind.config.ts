@@ -8,6 +8,10 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            colors: {
+                'background': '#0a192f',
+                'text-base': '#d0cdd6'
+            },
             boxShadow: {
                 overlay: '0 10px 30px -10px rgb(2 12 27 / 70%)'
             }
