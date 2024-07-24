@@ -9,19 +9,19 @@ export function Header() {
 
             <nav className="flex gap-4">
                 <HeaderLink sectionId="about-section">
-                    <span className="mr-1 text-purple-600">1.</span>
+                    <span className="mr-1 text-indigo-600">1.</span>
                     About
                 </HeaderLink>
                 <HeaderLink sectionId="experience-section">
-                    <span className="mr-1 text-purple-600">2.</span>
+                    <span className="mr-1 text-indigo-600">2.</span>
                     Experience
                 </HeaderLink>
                 <HeaderLink sectionId="projects-section">
-                    <span className="mr-1 text-purple-600">3.</span>
+                    <span className="mr-1 text-indigo-600">3.</span>
                     Projects
                 </HeaderLink>
                 <HeaderLink sectionId="contact-section">
-                    <span className="mr-1 text-purple-600">4.</span>
+                    <span className="mr-1 text-indigo-600">4.</span>
                     Contact
                 </HeaderLink>
                 <Link href="#">Download CV</Link>
