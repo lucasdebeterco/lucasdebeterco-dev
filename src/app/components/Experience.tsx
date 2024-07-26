@@ -28,16 +28,18 @@ export function Experience() {
                         </div>
 
                         <p className="text-slate-300">
-                            After internship time, I kept taking on new responsibilities. During this period, the company
-                            began a technology update process, where I had contact and specialized myself in ReactJS,
-                            Typescript, RESTful APIs and others modern concepts of the Front-end ecosystem.
+                            After internship time, I kept taking on new responsibilities, new technologies and even mentoring new people on the team.
+                            During this period, the company began a technology update process, where I had contact and specialized myself in
+                            ReactJS, Typescript, RESTful APIs and others modern concepts of the Front-end ecosystem.
                         </p>
 
                         <ul className="ml-8 list-disc text-slate-300">
                             <li>Building interfaces from scratch using ReactJS and Typescript.</li>
                             <li>Architecture of Front-end projects.</li>
-                            <li>Web concepts such as SSR, SPA, SSG and SEO.</li>
+                            <li>Help other developers with pair programming and code reviews.</li>
+                            <li>Responsible for mentoring new developers on the team.</li>
                             <li>Communication with other development sectors to create APIs from scratch.</li>
+                            <li>Web concepts such as SSR, SPA, SSG and SEO.</li>
                             <li>Use of state management tools and techniques.</li>
                             <li>Scrum Methodology</li>
                             <li>Design System development (Storybook).</li>
