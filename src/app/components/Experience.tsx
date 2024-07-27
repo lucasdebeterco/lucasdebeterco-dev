@@ -20,7 +20,7 @@ export function Experience() {
                     </Link>
                 </div>
 
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-14">
                     <div className="flex flex-col gap-4 text-sm">
                         <div>
                             <h3 className="text-base font-bold">Front-End Developer</h3>

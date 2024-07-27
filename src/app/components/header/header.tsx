@@ -7,7 +7,7 @@ export function Header() {
         <div className="fixed flex w-full items-center justify-between bg-slate-900 px-10 py-6 shadow-overlay">
             <span className="text-3xl">Lucas Debeterco</span>
 
-            <nav className="flex gap-4">
+            <nav className="flex gap-6">
                 <HeaderLink sectionId="about-section">
                     <span className="mr-1 text-indigo-600">1.</span>
                     About
