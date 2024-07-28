@@ -49,7 +49,7 @@ export function Experience() {
                             <li>React.js</li>
                             <li>TypeScript</li>
                             <li>API REST</li>
-                            <li>Arquitetura de software</li>
+                            <li>Software Architecture</li>
                             <li>JavaScript</li>
                             <li>Design System</li>
                             <li>Scss</li>
