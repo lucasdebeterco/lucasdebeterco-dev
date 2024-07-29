@@ -5,7 +5,7 @@ export function Experience() {
     return (
         <section id="experience-section" className="flex flex-col gap-12">
             <h2 className="text-xl">
-                <span className="mr-1 text-indigo-600">2.</span>
+                <span className="mr-1 text-indigo-500">2.</span>
                 Experience
             </h2>
 

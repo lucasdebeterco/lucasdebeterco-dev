@@ -14,11 +14,11 @@ export default function Home() {
                 <Experience/>
 
                 <section id="projects-section" className="">
-                    <span className="mr-1 text-indigo-600">3.</span>
+                    <span className="mr-1 text-indigo-500">3.</span>
                     Projects
                 </section>
                 <section id="contact-section" className="">
-                    <span className="mr-1 text-indigo-600">4.</span>
+                    <span className="mr-1 text-indigo-500">4.</span>
                     Contact
                 </section>
             </div>

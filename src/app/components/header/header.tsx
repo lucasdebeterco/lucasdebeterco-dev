@@ -35,19 +35,19 @@ export function Header() {
 
             <nav className="flex items-center gap-6 [&>a]:py-2">
                 <HeaderLink sectionId="about-section">
-                    <span className="mr-1 text-indigo-600">1.</span>
+                    <span className="mr-1 text-indigo-500">1.</span>
                     About
                 </HeaderLink>
                 <HeaderLink sectionId="experience-section">
-                    <span className="mr-1 text-indigo-600">2.</span>
+                    <span className="mr-1 text-indigo-500">2.</span>
                     Experience
                 </HeaderLink>
                 <HeaderLink sectionId="projects-section">
-                    <span className="mr-1 text-indigo-600">3.</span>
+                    <span className="mr-1 text-indigo-500">3.</span>
                     Projects
                 </HeaderLink>
                 <HeaderLink sectionId="contact-section">
-                    <span className="mr-1 text-indigo-600">4.</span>
+                    <span className="mr-1 text-indigo-500">4.</span>
                     Contact
                 </HeaderLink>
                 <Link className="rounded-md bg-indigo-600 px-4 py-2" href="#">Download CV</Link>

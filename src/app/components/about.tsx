@@ -2,7 +2,7 @@ export function About() {
     return (
         <section id="about-section" className="flex flex-col justify-center gap-6">
             <h2 className="text-xl">
-                <span className="mr-1 text-indigo-600">1.</span>
+                <span className="mr-1 text-indigo-500">1.</span>
                 About
             </h2>
 

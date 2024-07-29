@@ -13,7 +13,7 @@ export function HeaderLink({ sectionId, children }: HeaderLinkProps) {
     return (
         <Link
             href="#"
-            className="transition hover:text-indigo-600"
+            className="transition hover:text-indigo-500"
             onClick={(e) => scrollSmoothTo(e, sectionId)}
         >
             {children}
