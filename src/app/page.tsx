@@ -1,3 +1,7 @@
+'use client'
+
+import { useEffect } from 'react'
+import ScrollReveal from 'scrollreveal'
 
 import { About } from '@/app/components/about'
 import { Experience } from '@/app/components/experience'
@@ -5,7 +9,13 @@ import { Header } from '@/app/components/header/header'
 import { Presentation } from '@/app/components/presentation'
 
 export default function Home() {
-
+    useEffect(() => {
+        if (typeof window == 'undefined') {
+            ScrollReveal().reveal('#header', {
+                origin: 'right', duration: 1000, delay: 150, distance: '500px', scale: 1, easing: 'ease',
+            })
+        }
+    }, [])
 
     return (
         <>
