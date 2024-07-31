@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import ScrollReveal from 'scrollreveal'
 
 import { About } from '@/app/components/about'
-import { Experience } from '@/app/components/Experience'
+import { Experience } from '@/app/components/experience'
 import { Header } from '@/app/components/header/header'
 import { Presentation } from '@/app/components/presentation'
 
