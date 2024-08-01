@@ -10,7 +10,7 @@ import { Presentation } from '@/app/components/presentation'
 
 export default function Home() {
     useEffect(() => {
-        if (typeof window == 'undefined') {
+        if (typeof window !== 'undefined') {
             ScrollReveal().reveal('#header', {
                 origin: 'right', duration: 1000, delay: 150, distance: '500px', scale: 1, easing: 'ease',
             })
