@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect } from 'react'
-import ScrollReveal from 'scrollreveal'
 
 import { About } from '@/app/components/about'
 import { Experience } from '@/app/components/experience'
@@ -10,11 +9,13 @@ import { Presentation } from '@/app/components/presentation'
 
 export default function Home() {
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            ScrollReveal().reveal('#header', {
+        async function animate() {
+            const sr = (await import('scrollreveal')).default
+            sr().reveal('#header', {
                 origin: 'right', duration: 1000, delay: 150, distance: '500px', scale: 1, easing: 'ease',
             })
         }
+        animate()
     }, [])
 
     return (
