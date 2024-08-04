@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 
 import { About } from '@/app/components/about'
 import { Experience } from '@/app/components/experience'
+import { Footer } from '@/app/components/footer'
 import { Header } from '@/app/components/header/header'
 import { Presentation } from '@/app/components/presentation'
 
@@ -36,5 +37,8 @@ export default function Home() {
                     Contact
                 </section>
             </div>
-        </>)
+
+            <Footer />
+        </>
+    )
 }
