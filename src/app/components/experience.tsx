@@ -10,7 +10,7 @@ import {
 
 export function Experience() {
     return (
-        <section id="experience-section" className="flex flex-col gap-12">
+        <section id="experience-section" className="flex flex-col gap-6">
             <h2 className="text-xl">
                 <span className="mr-1 text-indigo-500">2.</span>
                 Experience

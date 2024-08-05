@@ -13,8 +13,7 @@ export function Presentation() {
                 </h2>
             </div>
             <span className="max-w-[60%] text-zinc-400">
-                I’m a front-end software engineer specialized in building quality digital experiences.
-                Currently, I’m focused on building accessible products using the <span className="font-bold">Javascript ecosystem</span>
+                I’m a front-end software engineer specialized in building accessible products using the <span className="font-bold">Javascript ecosystem</span> with React, NextJS and Tailwind.
             </span>
         </section>
     )

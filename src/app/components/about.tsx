@@ -9,10 +9,13 @@ export function About() {
             </h2>
 
             <div className="flex items-center justify-between gap-24 px-10">
-                <img src="/about/profile-photo.png" alt="Profile Photo"
-                    className="h-[300px] max-w-[300px] rounded-2xl"/>
+                <img
+                    src="/about/profile-photo.png"
+                    alt="Profile Photo"
+                    className="h-[320px] max-w-[320px] rounded-2xl"
+                />
 
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-12">
                     <div className="flex flex-col gap-4">
                         <h3 className="font-bold">Who am I?</h3>
                         <p className=" text-sm text-zinc-400 [&>b]:text-zinc-100">
