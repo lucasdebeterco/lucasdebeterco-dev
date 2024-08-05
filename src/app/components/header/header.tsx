@@ -4,7 +4,7 @@ import { HeaderLink } from '@/app/components/header/header-link'
 
 export function Header() {
     return (
-        <header id="header" className="fixed flex w-full items-center justify-between bg-slate-900 px-10 py-6 shadow-overlay">
+        <header id="header" className="fixed z-10 flex w-full items-center justify-between bg-slate-900 px-10 py-6 shadow-overlay">
             <span className="text-3xl">Lucas Debeterco</span>
 
             <nav className="flex items-center gap-6 [&>a]:py-2">
