@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import {
     Accordion,
@@ -17,7 +16,7 @@ export function Experience() {
             </h2>
 
             <div className="flex px-12">
-                <Accordion type="multiple" className="w-full gap-3 py-3 text-sm   [&>div:hover]:bg-[#141f35] [&>div:hover]:shadow-[inset_0_1px_0_0_0] [&>div:hover]:drop-shadow-lg [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
+                <Accordion type="multiple" className="w-full gap-3 text-sm [&>div:hover]:bg-[#141f35] [&>div:hover]:drop-shadow-sm [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
                     <AccordionItem value="item-1 flex">
                         <div className="flex items-center">
                             <div className="mt-3 flex w-1/5 flex-col text-slate-400">

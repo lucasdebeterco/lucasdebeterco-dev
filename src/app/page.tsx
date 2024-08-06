@@ -7,6 +7,7 @@ import { Experience } from '@/app/components/experience'
 import { Footer } from '@/app/components/footer'
 import { Header } from '@/app/components/header/header'
 import { Presentation } from '@/app/components/presentation'
+import { Projects } from '@/app/components/projects/projects'
 
 export default function Home() {
     useEffect(() => {
@@ -27,12 +28,8 @@ export default function Home() {
                 <Presentation />
                 <About />
                 <Experience/>
-
-                <section id="projects-section" className="">
-                    <span className="mr-1 text-indigo-500">3.</span>
-                    Projects
-                </section>
-                <section id="contact-section" className="">
+                <Projects />
+                <section id="contact-section">
                     <span className="mr-1 text-indigo-500">4.</span>
                     Contact
                 </section>
