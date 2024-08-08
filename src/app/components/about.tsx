@@ -3,20 +3,20 @@ import { Envelope, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-ico
 export function About() {
     return (
         <section id="about-section" className="flex flex-col justify-center gap-6">
-            <h2 id='about-section-title' className="text-xl">
+            <h2 id="about-section-title" className="text-xl">
                 <span className="mr-1 text-indigo-500">1.</span>
                 About
             </h2>
 
             <div className="flex items-center justify-between gap-24 px-10">
                 <img
-                    id='about-section-img'
+                    id="about-section-img"
                     src="/about/profile-photo.png"
                     alt="Profile Photo"
                     className="h-[320px] max-w-[320px] rounded-2xl"
                 />
 
-                <div id='about-section-content' className="flex flex-col gap-12">
+                <div id="about-section-content" className="flex flex-col gap-12">
                     <div className="flex flex-col gap-4">
                         <h3 className="font-bold">Who am I?</h3>
                         <p className=" text-sm text-zinc-400 [&>b]:text-zinc-100">
@@ -56,8 +56,8 @@ export function About() {
                                     <span className="text-sm text-slate-400">Github</span>
                                     <a
                                         target="_blank"
-                                        href="github.com/lucasdebeterco"
-                                        className="transition hover:text-indigo-600">lucasdebeterco</a>
+                                        href="https://github.com/lucasdebeterco"
+                                        className="transition hover:text-indigo-600" rel="noreferrer">lucasdebeterco</a>
                                 </div>
                             </div>
 
@@ -70,8 +70,8 @@ export function About() {
                                     <span className="text-sm text-slate-400">LinkedIn</span>
                                     <a
                                         target="_blank"
-                                        href="www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
-                                        className="transition hover:text-indigo-600">Lucas Wamser Rosa Debeterco</a>
+                                        href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
+                                        className="transition hover:text-indigo-600" rel="noreferrer">Lucas Wamser Rosa Debeterco</a>
                                 </div>
                             </div>
 
