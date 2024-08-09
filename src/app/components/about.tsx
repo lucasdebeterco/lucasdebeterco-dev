@@ -1,4 +1,5 @@
 import { Envelope, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
+import Link from 'next/link'
 
 export function About() {
     return (
@@ -41,10 +42,10 @@ export function About() {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Email</span>
-                                    <a href="mailto:lucasdebeterco@gmail.com"
+                                    <Link href="mailto:lucasdebeterco@gmail.com"
                                         className="transition hover:text-indigo-600">
                                         lucasdebeterco@gmail.com
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -54,10 +55,10 @@ export function About() {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Github</span>
-                                    <a
+                                    <Link
                                         target="_blank"
                                         href="https://github.com/lucasdebeterco"
-                                        className="transition hover:text-indigo-600" rel="noreferrer">lucasdebeterco</a>
+                                        className="transition hover:text-indigo-600" rel="noreferrer">lucasdebeterco</Link>
                                 </div>
                             </div>
 
@@ -68,10 +69,10 @@ export function About() {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">LinkedIn</span>
-                                    <a
+                                    <Link
                                         target="_blank"
                                         href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
-                                        className="transition hover:text-indigo-600" rel="noreferrer">Lucas Wamser Rosa Debeterco</a>
+                                        className="transition hover:text-indigo-600" rel="noreferrer">Lucas Wamser Rosa Debeterco</Link>
                                 </div>
                             </div>
 
@@ -81,10 +82,10 @@ export function About() {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Instagram</span>
-                                    <a
+                                    <Link
                                         target="_blank"
                                         href="https://instagram.com/lucasdebeterco/"
-                                        className="transition hover:text-indigo-600" rel="noreferrer">Lucas Debeterco</a>
+                                        className="transition hover:text-indigo-600" rel="noreferrer">Lucas Debeterco</Link>
                                 </div>
                             </div>
                         </div>

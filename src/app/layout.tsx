@@ -6,7 +6,7 @@ import { Fira_Code } from 'next/font/google'
 const fira_code = Fira_Code({
     subsets: ['latin']
 })
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
     title: 'Lucas Debeterco',
     description: 'My personal website portfolio',
 }
