@@ -10,12 +10,7 @@ export function About() {
             </h2>
 
             <div className="flex items-center justify-between gap-24 px-10">
-                <img
-                    id="about-section-img"
-                    src="/about/profile-photo.png"
-                    alt="Profile Photo"
-                    className="h-[320px] max-w-[320px] rounded-2xl"
-                />
+
 
                 <div id="about-section-content" className="flex flex-col gap-12">
                     <div className="flex flex-col gap-4">
