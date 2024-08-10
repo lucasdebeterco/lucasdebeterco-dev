@@ -10,12 +10,12 @@ import {
 export function Experience() {
     return (
         <section id="experience-section" className="flex flex-col gap-6">
-            <h2 id='experience-section-title' className="text-xl">
+            <h2 id="experience-section-title" className="text-xl">
                 <span className="mr-1 text-indigo-500">2.</span>
                 Experience
             </h2>
 
-            <div id='experience-section-content' className="flex px-12">
+            <div id="experience-section-content" className="flex px-12">
                 <Accordion type="multiple" className="w-full gap-3 text-sm [&>div:hover]:bg-[#141f35] [&>div:hover]:drop-shadow-sm [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
                     <AccordionItem value="item-1 flex">
                         <div className="flex items-center">
@@ -53,24 +53,23 @@ export function Experience() {
                         </div>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                After internship time, I kept taking on new responsibilities, new technologies and
-                                even mentoring new people on the team.
-                                During this period, the company began a technology update process, where I had
-                                contact and specialized myself in
-                                ReactJS, Typescript, RESTful APIs and others modern concepts of the Front-end
-                                ecosystem.
+                                After internship time, I kept taking on new responsibilities, new technologies and even mentoring new people
+                                on the team. During this period, the company began a technology update process, where I had contact and specialized
+                                myself in ReactJS, Typescript, RESTful APIs, React Query and others modern concepts of the Front-end ecosystem.
                             </p>
 
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
-                                <li>Building interfaces from scratch using ReactJS and Typescript.</li>
-                                <li>Architecture of Front-end projects.</li>
+                                <li>Build and architect Front-end projects from scratch using ReactJS and Typescript.</li>
+                                <li>Breaking down monolithic architectures into agile and manageable components using micro-frontends.</li>
+                                <li>CI/CD practices using AWS Amplify.</li>
                                 <li>Help other developers with pair programming and code reviews.</li>
                                 <li>Responsible for mentoring new developers on the team.</li>
-                                <li>Communication with other development sectors to create APIs from scratch.</li>
-                                <li>Web concepts such as SSR, SPA, SSG and SEO.</li>
+                                <li>Communication with other teams, such as QA and Back-end to create APIs from scratch.</li>
+                                <li>Knowledge in web concepts such as SSR, SPA, SSG and SEO.</li>
                                 <li>Use of state management tools and techniques.</li>
-                                <li>Scrum Methodology</li>
                                 <li>Design System development (Storybook).</li>
+                                <li>Scrum Methodology.</li>
+                                <li>Git Flow</li>
                             </ul>
                         </AccordionContent>
                     </AccordionItem>
