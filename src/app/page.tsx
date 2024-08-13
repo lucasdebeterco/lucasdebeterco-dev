@@ -7,6 +7,7 @@ import { Experience } from '@/app/components/experience'
 import { Footer } from '@/app/components/footer'
 import { Header } from '@/app/components/header/header'
 import { Presentation } from '@/app/components/presentation'
+import { ProfessionAchievements } from '@/app/components/profession-achievements'
 import { Projects } from '@/app/components/projects/projects'
 import { elementsToReveal } from '@/app/data/elementsToReveal'
 
@@ -36,11 +37,8 @@ export default function Home() {
                 <Presentation />
                 <About />
                 <Experience/>
+                <ProfessionAchievements />
                 <Projects />
-                <section id="contact-section">
-                    <span className="mr-1 text-indigo-500">4.</span>
-                    Contact
-                </section>
             </div>
 
             <Footer />

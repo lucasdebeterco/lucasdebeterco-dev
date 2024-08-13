@@ -17,7 +17,7 @@ const config = {
         },
         extend: {
             colors: {
-                'background': '#0a192f',
+                'background': '#141b2b',
                 'text-base': '#d0cdd6'
             },
             boxShadow: {

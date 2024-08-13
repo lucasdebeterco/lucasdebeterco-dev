@@ -53,7 +53,11 @@ export function About() {
                                     <Link
                                         target="_blank"
                                         href="https://github.com/lucasdebeterco"
-                                        className="transition hover:text-indigo-600" rel="noreferrer">lucasdebeterco</Link>
+                                        className="transition hover:text-indigo-600"
+                                        rel="noreferrer"
+                                    >
+                                            lucasdebeterco
+                                    </Link>
                                 </div>
                             </div>
 
@@ -67,7 +71,11 @@ export function About() {
                                     <Link
                                         target="_blank"
                                         href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
-                                        className="transition hover:text-indigo-600" rel="noreferrer">Lucas Wamser Rosa Debeterco</Link>
+                                        className="transition hover:text-indigo-600"
+                                        rel="noreferrer"
+                                    >
+                                        Lucas Wamser Rosa Debeterco
+                                    </Link>
                                 </div>
                             </div>
 
@@ -80,7 +88,11 @@ export function About() {
                                     <Link
                                         target="_blank"
                                         href="https://instagram.com/lucasdebeterco/"
-                                        className="transition hover:text-indigo-600" rel="noreferrer">Lucas Debeterco</Link>
+                                        className="transition hover:text-indigo-600"
+                                        rel="noreferrer"
+                                    >
+                                        Lucas Debeterco
+                                    </Link>
                                 </div>
                             </div>
                         </div>

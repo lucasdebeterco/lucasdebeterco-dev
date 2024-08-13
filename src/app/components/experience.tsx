@@ -37,16 +37,18 @@ export function Experience() {
                                         <li>TypeScript</li>
                                         <li>API REST</li>
                                         <li>Software Architecture</li>
-                                        <li>JavaScript</li>
                                         <li>Design System</li>
-                                        <li>Scss</li>
-                                        <li>CSS</li>
-                                        <li>Tailwind CSS</li>
-                                        <li>Styled-components</li>
-                                        <li>Twig</li>
+                                        <li>Zustand | ContextAPI</li>
+                                        <li>Cypress</li>
+                                        <li>CI/CD</li>
+                                        <li>JavaScript</li>
+                                        <li>SCSS | CSS | Tailwind | Styled-components</li>
+                                        <li>Twig Template Engine</li>
                                         <li>Vite</li>
                                         <li>ESLint</li>
-                                        <li>Scrum</li>
+                                        <li>Agile | Scrum</li>
+                                        <li>Basic SQL | Postgres</li>
+                                        <li>Basic PHP</li>
                                     </ul>
                                 </div>
                             </AccordionTrigger>
@@ -90,12 +92,11 @@ export function Experience() {
 
                                     <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
                                         <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>Twig</li>
+                                        <li>SASS | CSS</li>
+                                        <li>Twig Template Engine</li>
                                         <li>JavaScript</li>
                                         <li>JQuery</li>
-                                        <li>SASS</li>
-                                        <li>PHP</li>
+                                        <li>Basic PHP</li>
                                         <li>PostgreSQL</li>
                                     </ul>
                                 </div>

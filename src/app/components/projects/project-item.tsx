@@ -4,16 +4,30 @@ import Link from 'next/link'
 
 interface ProjectItemProps {
     id: number
+    imageSrc: string
+    imageAlt: string
+    githubLink: string
+    productionLink: string
+    title: string
+    description: string
+    tools: string[]
 }
 
-export function ProjectItem({id}: ProjectItemProps) {
+export function ProjectItem({id, imageSrc, imageAlt, githubLink, productionLink, title, description, tools}: ProjectItemProps) {
     return (
         <div
             id={`project-card-${id}`}
-            className="relative flex flex-col rounded-sm bg-[#141f35] drop-shadow-sm transition-transform [&:hover_img]:scale-110 [&:hover_h3]:text-indigo-600"
+            className="relative flex flex-col rounded-sm bg-[#141f35] drop-shadow-sm transition-transform [&:hover_h3]:text-indigo-600 [&:hover_img]:scale-110"
         >
-            <div className='overflow-hidden'>
-                <Image src="/projects/pizza-shop.png" className='transition duration-300 ease' alt="Pizza Shop Project" width={500} height={0} quality={100}/>
+            <div className="overflow-hidden">
+                <Image
+                    src={imageSrc}
+                    className="ease transition duration-300"
+                    alt={imageAlt}
+                    width={500}
+                    height={0}
+                    quality={100}
+                />
             </div>
             <div className="flex flex-col gap-6 p-8">
                 <div className="flex items-center justify-between">
@@ -22,28 +36,25 @@ export function ProjectItem({id}: ProjectItemProps) {
                     </div>
 
                     <div className="flex gap-3">
-                        <Link href="https://github.com/lucasdebeterco/pizza-shop" className="text-slate-400 transition hover:text-indigo-500">
+                        <Link href={githubLink} className="text-slate-400 transition hover:text-indigo-500">
                             <GithubLogo size={28}/>
                         </Link>
-                        <Link href="https://github.com/lucasdebeterco/pizza-shop" className="text-slate-400 transition hover:text-indigo-500">
+                        <Link href={productionLink} className="text-slate-400 transition hover:text-indigo-500">
                             <ArrowSquareOut size={28}/>
                         </Link>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <h3 className="text-xl font-bold transition">Pizza Shop</h3>
+                    <h3 className="text-xl font-bold transition">{title}</h3>
                     <p className="text-sm">
-                        A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top
-                        languages,
-                        starred repositories, and sort through your top repos by number of stars, forks, and size.
+                        {description}
                     </p>
                     <div className="flex gap-3 text-xs text-slate-400">
-                        <span>Next.js</span>
-                        <span>Tailwind CSS</span>
-                        <span>ReactJS</span>
+                        {tools.map(tool => <span>{tool}</span>)}
                     </div>
                 </div>
             </div>
-        </div>)
+        </div>
+    )
 }
