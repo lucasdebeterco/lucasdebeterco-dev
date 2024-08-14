@@ -32,7 +32,7 @@ export function Experience() {
                                         </span>
                                     </div>
 
-                                    <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
+                                    <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:whitespace-nowrap [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
                                         <li>React.js</li>
                                         <li>TypeScript</li>
                                         <li>API REST</li>
@@ -91,7 +91,7 @@ export function Experience() {
                                         </span>
                                     </div>
 
-                                    <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
+                                    <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:whitespace-nowrap [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
                                         <li>HTML</li>
                                         <li>SASS | CSS</li>
                                         <li>Twig Template Engine</li>
