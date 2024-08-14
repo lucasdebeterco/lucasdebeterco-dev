@@ -70,6 +70,7 @@ export function Experience() {
                                 <li>Knowledge in web concepts such as SSR, SPA, SSG and SEO.</li>
                                 <li>Use of state management tools and techniques.</li>
                                 <li>Design System development (Storybook).</li>
+                                <li>Cypress (E2E Testing).</li>
                                 <li>Scrum Methodology.</li>
                                 <li>Git Flow</li>
                             </ul>
