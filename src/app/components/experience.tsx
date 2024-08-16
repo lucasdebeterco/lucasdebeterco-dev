@@ -10,12 +10,12 @@ import {
 export function Experience() {
     return (
         <section id="experience-section" className="flex flex-col gap-6">
-            <h2 className="text-xl">
+            <h2 id='experience-section-title' className="text-xl">
                 <span className="mr-1 text-indigo-500">2.</span>
                 Experience
             </h2>
 
-            <div className="flex px-12">
+            <div id='experience-section-content' className="flex px-12">
                 <Accordion type="multiple" className="w-full gap-3 text-sm [&>div:hover]:bg-[#141f35] [&>div:hover]:drop-shadow-sm [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
                     <AccordionItem value="item-1 flex">
                         <div className="flex items-center">

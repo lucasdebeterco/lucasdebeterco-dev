@@ -8,13 +8,21 @@ import { Footer } from '@/app/components/footer'
 import { Header } from '@/app/components/header/header'
 import { Presentation } from '@/app/components/presentation'
 import { Projects } from '@/app/components/projects/projects'
+import { elementsToReveal } from '@/app/data/elementsToReveal'
 
 export default function Home() {
     useEffect(() => {
         async function animate() {
             const sr = (await import('scrollreveal')).default
-            sr().reveal('#header', {
-                origin: 'right', duration: 1000, delay: 150, distance: '500px', scale: 1, easing: 'ease',
+            elementsToReveal.forEach(element => {
+                sr().reveal(element.selector, {
+                    origin: 'top',
+                    duration: 800,
+                    delay: element.delay,
+                    distance: '100px',
+                    scale: 1,
+                    easing: 'ease'
+                })
             })
         }
         animate()

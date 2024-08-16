@@ -1,0 +1,21 @@
+export const elementsToReveal = [
+    { selector: '#header-logo', delay: 100 },
+    { selector: '#about-section-link', delay: 200 },
+    { selector: '#experience-section-link', delay: 300 },
+    { selector: '#projects-section-link', delay: 400 },
+    { selector: '#contact-section-link', delay: 500 },
+    { selector: '#download-cv-btn', delay: 600 },
+    { selector: '#presentation-span', delay: 800 },
+    { selector: '#presentation-name', delay: 900 },
+    { selector: '#presentation-title', delay: 1000 },
+    { selector: '#presentation-subtitle', delay: 1100 },
+    { selector: '#about-section-title', delay: 200 },
+    { selector: '#about-section-img', delay: 300 },
+    { selector: '#about-section-content', delay: 400 },
+    { selector: '#experience-section-title', delay: 200 },
+    { selector: '#experience-section-content', delay: 300 },
+    { selector: '#projects-section-title', delay: 200 },
+    { selector: '#project-card-1', delay: 300 },
+    { selector: '#project-card-2', delay: 500 },
+    { selector: '#project-card-3', delay: 700 }
+]

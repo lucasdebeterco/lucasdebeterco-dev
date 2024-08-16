@@ -2,10 +2,19 @@ import { ArrowSquareOut, FolderSimple, GithubLogo } from '@phosphor-icons/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export function ProjectItem() {
+interface ProjectItemProps {
+    id: number
+}
+
+export function ProjectItem({id}: ProjectItemProps) {
     return (
-        <div className="relative flex flex-col rounded-sm bg-[#141f35] drop-shadow-sm transition-transform hover:-translate-y-1.5 [&:hover_h3]:text-indigo-600">
-            <Image src="/projects/pizza-shop.png" alt="Pizza Shop Project" width={500} height={0} quality={100}/>
+        <div
+            id={`project-card-${id}`}
+            className="relative flex flex-col rounded-sm bg-[#141f35] drop-shadow-sm transition-transform [&:hover_img]:scale-110 [&:hover_h3]:text-indigo-600"
+        >
+            <div className='overflow-hidden'>
+                <Image src="/projects/pizza-shop.png" className='transition duration-300 ease' alt="Pizza Shop Project" width={500} height={0} quality={100}/>
+            </div>
             <div className="flex flex-col gap-6 p-8">
                 <div className="flex items-center justify-between">
                     <div className="text-indigo-600">
