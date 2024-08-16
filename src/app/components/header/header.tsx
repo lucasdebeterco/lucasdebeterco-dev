@@ -32,7 +32,14 @@ export function Header() {
                         Projects
                     </HeaderLink>
                 </div>
-                <Link id="download-cv-btn" className="rounded-md bg-indigo-600 px-4 py-2" href="#">Download CV</Link>
+                <Link
+                    id="download-cv-btn"
+                    className="rounded-md bg-indigo-600 px-4 py-2"
+                    href="https://docs.google.com/document/d/1fq_V-xOR7V-zkqSvxnxsgUlVA3M7EP6PV3CPV0VEIqk/edit?usp=sharing"
+                    target="_blank"
+                >
+                    Download CV
+                </Link>
             </nav>
         </header>)
 }
