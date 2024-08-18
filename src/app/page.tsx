@@ -7,8 +7,8 @@ import { Experience } from '@/app/components/experience'
 import { Footer } from '@/app/components/footer'
 import { Header } from '@/app/components/header/header'
 import { Presentation } from '@/app/components/presentation'
-import { ProfessionAchievements } from '@/app/components/profession-achievements'
-import { Projects } from '@/app/components/projects/projects'
+import { PersonalProjects } from '@/app/components/projects/personal-projects'
+import { ProfessionalAchievements } from '@/app/components/projects/profession-achievements'
 import { elementsToReveal } from '@/app/data/elementsToReveal'
 
 export default function Home() {
@@ -37,8 +37,8 @@ export default function Home() {
                 <Presentation />
                 <About />
                 <Experience/>
-                <ProfessionAchievements />
-                <Projects />
+                <ProfessionalAchievements />
+                <PersonalProjects />
             </div>
 
             <Footer />

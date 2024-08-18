@@ -12,6 +12,7 @@
     "@lucas.debeterco/eslint-config": "^1.1.0",
     "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-dialog": "^1.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.427.0",
