@@ -15,7 +15,7 @@ export function PersonalProjects() {
                         id={index}
                         title={item.title}
                         description={item.description}
-                        imageSrc={item.imageSrc}
+                        imageSrc={item.imageSrc[0]}
                         imageAlt={item.imageAlt}
                         githubLink={item.githubLink}
                         productionLink={item.productionLink}
