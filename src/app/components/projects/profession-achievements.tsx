@@ -15,6 +15,11 @@ export function ProfessionalAchievements() {
                         id={index}
                         title={item.title}
                         description={item.description}
+                        imageSrc={item.imageSrc[0]}
+                        imageAlt={item.imageAlt}
+                        githubLink={item.githubLink}
+                        productionLink={item.productionLink}
+                        tools={item.tools}
                     />
                 ))}
             </div>

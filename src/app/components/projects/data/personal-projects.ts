@@ -30,5 +30,21 @@ export const personalProjects = [
             'TypeScript',
             'Styled Components'
         ]
+    },
+    {
+        title: 'Blog Router (Alura)',
+        description: 'Projeto básico para praticar os conceitos da bliblioteca de roteamento React Router DOM, a aplicação se trata de um blog pessoal para listagem de artigos em ReactJS e TypeScript.',
+        imageSrc: [
+            '/personal-projects/blog-router/home.png',
+        ],
+        imageAlt: 'Blog Router Project',
+        githubLink: 'https://github.com/lucasdebeterco/blog-router-alura',
+        productionLink: null,
+        tools: [
+            'React',
+            'TypeScript',
+            'CSS Modules',
+            'React Router Dom'
+        ]
     }
 ]
