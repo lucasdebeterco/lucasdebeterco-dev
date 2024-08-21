@@ -6,7 +6,7 @@ export function PersonalProjects() {
         <section id="projects-section" className="flex flex-col gap-6">
             <h2 id="projects-section-title" className="text-xl">
                 <span className="mr-1 text-indigo-500">4.</span>
-                Projects
+                Personal Projects
             </h2>
 
             <div className="grid grid-cols-3 gap-4">

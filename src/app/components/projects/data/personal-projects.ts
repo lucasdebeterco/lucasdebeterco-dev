@@ -1,17 +1,18 @@
 export const personalProjects = [
     {
         title: 'Pizza Shop',
-        description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
+        description: 'aaaaa',
         imageSrc: [
             '/personal-projects/pizza-shop/pizza-shop.png'
         ],
         imageAlt: 'Pizza Shop Project',
         githubLink: 'https://github.com/lucasdebeterco/pizza-shop',
-        productionLink: 'https://github.com/lucasdebeterco/pizza-shop',
+        productionLink: null,
         tools: [
             'Next.js',
-            'Tailwind CSS',
-            'ReactJS'
+            'ReactJS',
+            'Typescript',
+            'Tailwind CSS'
         ]
     },
     {
@@ -44,6 +45,25 @@ export const personalProjects = [
             'React',
             'TypeScript',
             'CSS Modules',
+            'React Router Dom'
+        ]
+    },
+    {
+        title: 'Ignite Timer',
+        description: 'Aplicação para gestão de tempo, permite criação de uma tarefa e contagem de tempo gasto no desenvolvimento de cada tarefa. A aplicação foi desenvolvida utilizando ReactJS e Styled Components. Neste projeto, utilizei biblotecas como Zod para validação de tipagens com base em schemas e o Immer para trabalhar com estados imutáveis de forma facilitada',
+        imageSrc: [
+            '/personal-projects/ignite-timer/task.png',
+            '/personal-projects/ignite-timer/task-list.png',
+        ],
+        imageAlt: 'Ignite Timer Project',
+        githubLink: 'https://github.com/lucasdebeterco/ignite-timer',
+        productionLink: null,
+        tools: [
+            'React',
+            'TypeScript',
+            'Styled Components',
+            'Zod',
+            'Immer',
             'React Router Dom'
         ]
     }
