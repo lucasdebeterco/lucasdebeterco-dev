@@ -85,5 +85,21 @@ export const personalProjects = [
             'Tailwind CSS',
             'Date-fns'
         ]
+    },
+    {
+        title: 'ToDo List',
+        description: 'Página web simples para administrar a criação e remoção de tarefas utilizando localStorage.',
+        imageSrc: [
+            '/personal-projects/todo-list/home.png'
+        ],
+        imageAlt: 'ToDo List Project',
+        githubLink: 'https://github.com/lucasdebeterco/todo-list',
+        productionLink: 'https://main.dzgmv8kqwlxwq.amplifyapp.com/',
+        tools: [
+            'React',
+            'TypeScript',
+            'Tailwind CSS',
+            'Local Storage'
+        ]
     }
 ]
