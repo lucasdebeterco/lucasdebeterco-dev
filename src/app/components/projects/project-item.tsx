@@ -20,10 +20,10 @@ export function ProjectItem({id, title, description, imageSrc, imageAlt, githubL
             className="relative flex flex-col rounded-sm bg-[#141f35] drop-shadow-sm transition-transform [&:hover_h3]:text-indigo-600 [&:hover_img]:scale-110"
         >
             {imageSrc && imageAlt && (
-                <div className="overflow-hidden">
+                <div className="h-[260px] overflow-hidden">
                     <Image
                         src={imageSrc}
-                        className="ease transition duration-300"
+                        className="ease h-full object-cover transition duration-300"
                         alt={imageAlt}
                         width={500}
                         height={0}
@@ -57,7 +57,7 @@ export function ProjectItem({id, title, description, imageSrc, imageAlt, githubL
                         {description}
                     </p>
                     {tools && (
-                        <div className="flex gap-3 text-xs text-slate-400">
+                        <div className="flex flex-wrap gap-3 text-xs text-slate-400">
                             {tools.map(tool => <span>{tool}</span>)}
                         </div>
                     )}
