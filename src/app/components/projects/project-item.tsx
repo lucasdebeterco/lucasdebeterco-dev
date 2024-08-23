@@ -20,7 +20,7 @@ export function ProjectItem({id, title, description, imageSrc, imageAlt, githubL
             className="relative flex flex-col rounded-sm bg-[#141f35] drop-shadow-sm transition-transform [&:hover_h3]:text-indigo-600 [&:hover_img]:scale-110"
         >
             {imageSrc && imageAlt && (
-                <div className="h-[260px] overflow-hidden">
+                <div className="h-[240px] overflow-hidden">
                     <Image
                         src={imageSrc}
                         className="ease h-full object-cover transition duration-300"
@@ -39,12 +39,20 @@ export function ProjectItem({id, title, description, imageSrc, imageAlt, githubL
 
                     <div className="flex gap-3">
                         {githubLink && (
-                            <Link href={githubLink} className="text-slate-400 transition hover:text-indigo-500">
+                            <Link
+                                href={githubLink}
+                                className="text-slate-400 transition hover:text-indigo-500"
+                                target="_blank"
+                            >
                                 <GithubLogo size={28}/>
                             </Link>
                         )}
                         {productionLink && (
-                            <Link href={productionLink} className="text-slate-400 transition hover:text-indigo-500">
+                            <Link
+                                href={productionLink}
+                                className="text-slate-400 transition hover:text-indigo-500"
+                                target="_blank"
+                            >
                                 <ArrowSquareOut size={28}/>
                             </Link>
                         )}

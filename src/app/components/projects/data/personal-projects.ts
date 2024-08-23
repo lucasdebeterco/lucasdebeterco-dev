@@ -66,5 +66,24 @@ export const personalProjects = [
             'Immer',
             'React Router Dom'
         ]
+    },
+    {
+        title: 'Github Blog',
+        description: 'Desenvolvimento de uma aplicação que consome a API do GitHub para buscar issues de um repositório, dados do seu perfil e exibir elas como um blog. A aplicação realiza apresentação do perfil com imagem, número de seguidores, nome e outras informações disponíveis pela API do GitHub, listagem e filtragem das issues do repositório e uma página para exibir os detalhes de cada post (issue).',
+        imageSrc: [
+            '/personal-projects/github-blog/home.png',
+            '/personal-projects/github-blog/post.png',
+        ],
+        imageAlt: 'Github Blog Project',
+        githubLink: 'https://github.com/lucasdebeterco/github-blog',
+        productionLink: 'https://github-blog.lucasdebeterco.dev/',
+        tools: [
+            'React',
+            'TypeScript',
+            'Axios',
+            'React Router Dom',
+            'Tailwind CSS',
+            'Date-fns'
+        ]
     }
 ]
