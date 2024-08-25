@@ -101,5 +101,20 @@ export const personalProjects = [
             'Tailwind CSS',
             'Local Storage'
         ]
+    },
+    {
+        title: 'ES Converter',
+        description: 'Conversor ECMAScript5 para ECMAScript6, realizado para falicitar algumas situações que passei no trabalho, onde precisei converter um código gerado por um bundler antigo para uma versão mais nova do ECMAScript.',
+        imageSrc: [
+            '/personal-projects/es-converter/files.png'
+        ],
+        imageAlt: 'ES Converter Project',
+        githubLink: 'https://github.com/lucasdebeterco/es-converter',
+        productionLink: null,
+        tools: [
+            'Babel',
+            'Node'
+        ]
     }
+
 ]
