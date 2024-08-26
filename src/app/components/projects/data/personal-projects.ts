@@ -134,6 +134,21 @@ export const personalProjects = [
             'Tailwindcss',
             'Prisma ORM'
         ]
+    },
+    {
+        title: 'Aluroni',
+        description: 'Aplicação de restaurante, projeto React, TypeScript e CSS Modules. Aplicação com input de busca de pratos, filtros por categoria (massas, carnes, etc), ordenação por preços, porção, etc.',
+        imageSrc: [
+            '/personal-projects/aluroni/home.png'
+        ],
+        imageAlt: 'Aluroni Project',
+        githubLink: 'https://github.com/lucasdebeterco/aluroni',
+        productionLink: null,
+        tools: [
+            'React',
+            'Typescript',
+            'CSS Modules'
+        ]
     }
 
 ]
