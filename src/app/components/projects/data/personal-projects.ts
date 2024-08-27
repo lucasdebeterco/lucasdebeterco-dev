@@ -137,7 +137,7 @@ export const personalProjects = [
     },
     {
         title: 'Aluroni',
-        description: 'Aplicação de restaurante, projeto React, TypeScript e CSS Modules. Aplicação com input de busca de pratos, filtros por categoria (massas, carnes, etc), ordenação por preços, porção, etc.',
+        description: 'Restaurant application, React, TypeScript and CSS Modules. Application with meals search input, filters by category (pasta, meat..), sorting by price, portion, etc.',
         imageSrc: [
             '/personal-projects/aluroni/home.png'
         ],
@@ -148,6 +148,22 @@ export const personalProjects = [
             'React',
             'Typescript',
             'CSS Modules'
+        ]
+    },
+    {
+        title: 'Ignite Feed',
+        description: 'Ignite feed is a simple project that simulates the social media feed, with comments, likes and delete comments functionalities. Made with React, Typescript and CSS Modules.',
+        imageSrc: [
+            '/personal-projects/ignite-feed/home.png'
+        ],
+        imageAlt: 'Ignite Feed Project',
+        githubLink: 'https://github.com/lucasdebeterco/ignite-feed',
+        productionLink: null,
+        tools: [
+            'React',
+            'Typescript',
+            'CSS Modules',
+            'Date-FNS'
         ]
     }
 
