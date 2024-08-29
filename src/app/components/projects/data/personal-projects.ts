@@ -165,6 +165,21 @@ export const personalProjects = [
             'CSS Modules',
             'Date-FNS'
         ]
+    },
+    {
+        title: 'ESLint Config',
+        description: 'This is the standard package that I have made and use in my personal projects for ESLint configurations in React/NextJS, it contains formatting rules, spacing, imports and various settings for code formatting. The main challenge of this project was my first contact with creating and making a package available on NPM. After carrying out this personal project, I replicated the concept in the company, and now we have a configuration package also within the Frontend team, that is used in all React projects.',
+        imageSrc: [
+            '/personal-projects/eslint-config/npm-image.png'
+        ],
+        imageAlt: 'Ignite Feed Project',
+        githubLink: 'https://github.com/lucasdebeterco/eslint-config-lucasdebeterco',
+        productionLink: 'https://www.npmjs.com/package/@lucas.debeterco/eslint-config',
+        tools: [
+            'ESLint',
+            'Node',
+            'NPM'
+        ]
     }
 
 ]
