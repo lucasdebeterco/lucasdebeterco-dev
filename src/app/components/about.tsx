@@ -9,9 +9,7 @@ export function About() {
                 About
             </h2>
 
-            <div className="flex items-center justify-between gap-24 px-10">
-
-
+            <div className="flex items-center justify-between gap-24 px-8">
                 <div id="about-section-content" className="flex flex-col gap-12">
                     <div className="flex flex-col gap-4">
                         <h3 className="font-bold">Who am I?</h3>
@@ -30,71 +28,71 @@ export function About() {
                     </div>
                     <div className="flex flex-col gap-4">
                         <h3 className="font-bold">Get In Touch!</h3>
-                        <div className="grid grid-cols-2 gap-3">
-                            <div className="flex items-center gap-3">
-                                <div className="flex items-center justify-center rounded-md bg-[#141f35] p-3">
+                        <div className="grid grid-cols-4 gap-10">
+                            <Link href="mailto:lucasdebeterco@gmail.com"
+                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-600">
+                                <div
+                                    className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
                                     <Envelope size={24}/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Email</span>
-                                    <Link href="mailto:lucasdebeterco@gmail.com"
-                                        className="transition hover:text-indigo-600">
+                                    <span className="text transition">
                                         lucasdebeterco@gmail.com
-                                    </Link>
+                                    </span>
                                 </div>
-                            </div>
+                            </Link>
 
-                            <div className="flex items-center gap-3">
-                                <div className="flex items-center justify-center rounded-md bg-[#141f35] p-3">
+                            <Link
+                                target="_blank"
+                                href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
+                                rel="noreferrer"
+                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-600"
+                            >
+                                <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
                                     <GithubLogo size={24}/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Github</span>
-                                    <Link
-                                        target="_blank"
-                                        href="https://github.com/lucasdebeterco"
-                                        className="transition hover:text-indigo-600"
-                                        rel="noreferrer"
-                                    >
-                                            lucasdebeterco
-                                    </Link>
+                                    <span className="text transition">
+                                        lucasdebeterco
+                                    </span>
                                 </div>
-                            </div>
+                            </Link>
 
-
-                            <div className="flex items-center gap-3">
-                                <div className="flex items-center justify-center rounded-md bg-[#141f35] p-3">
+                            <Link
+                                target="_blank"
+                                href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
+                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-600"
+                                rel="noreferrer"
+                            >
+                                <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
                                     <LinkedinLogo size={24}/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">LinkedIn</span>
-                                    <Link
-                                        target="_blank"
-                                        href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
-                                        className="transition hover:text-indigo-600"
-                                        rel="noreferrer"
-                                    >
+                                    <span className="text transition">
                                         Lucas Wamser Rosa Debeterco
-                                    </Link>
+                                    </span>
                                 </div>
-                            </div>
+                            </Link>
 
-                            <div className="flex items-center gap-3">
-                                <div className="flex items-center justify-center rounded-md bg-[#141f35] p-3">
+                            <Link
+                                target="_blank"
+                                href="https://instagram.com/lucasdebeterco/"
+                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-600"
+                                rel="noreferrer"
+                            >
+                                <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
                                     <InstagramLogo size={24}/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Instagram</span>
-                                    <Link
-                                        target="_blank"
-                                        href="https://instagram.com/lucasdebeterco/"
-                                        className="transition hover:text-indigo-600"
-                                        rel="noreferrer"
-                                    >
+                                    <span className="text transition">
                                         Lucas Debeterco
-                                    </Link>
+                                    </span>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
