@@ -1,7 +1,9 @@
+import Image from 'next/image'
+
 export function Presentation() {
     return (
-        <section id="presentation-section" className="flex h-[50vh] items-center justify-between gap-6">
-            <div className="flex flex-col">
+        <section id="presentation-section" className="flex h-[85vh] items-center justify-between gap-8">
+            <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-2 font-bold">
                     <span id="presentation-span" className="text-xl font-bold text-indigo-500">Hi, my name is</span>
                     <h1 id="presentation-name"
@@ -10,21 +12,91 @@ export function Presentation() {
                     </h1>
                     <h2 className="text-3xl" id="presentation-title">
                         A <strong
-                            className="bg-gradient-to-r from-indigo-500 to-purple-700 bg-clip-text text-4xl font-extrabold text-transparent">Front-end
-                        developer</strong> creating web solutions for modern challanges.
+                            className="bg-gradient-to-r from-indigo-500 to-purple-700 bg-clip-text text-4xl font-extrabold text-transparent">
+                            Front-end developer
+                        </strong> creating web solutions for modern challanges.
                     </h2>
                 </div>
+                
                 <span id="presentation-subtitle" className="max-w-[60%] text-zinc-400">
-                    I’m a front-end software engineer specialized in building accessible products using the <span
+                        I’m a front-end software engineer specialized in building accessible products using the <span
                         className="font-bold">Javascript ecosystem</span> with React, NextJS and Tailwind.
                 </span>
+
+                <div className="flex gap-4">
+                    <Image
+                        src="/about/tools/typescript.svg"
+                        alt="Typescript Tool Logo"
+                        width={30}
+                        height={30}
+                        quality={100}
+                        className="max-h-[30px]"
+                        draggable={false}
+                    />
+                    <Image
+                        id="about-section-img"
+                        src="/about/tools/javascript.svg"
+                        alt="Javascript Tool Logo"
+                        width={30}
+                        height={30}
+                        quality={100}
+                        className="max-h-[30px]"
+                        draggable={false}
+                    />
+                    <Image
+                        id="about-section-img"
+                        src="/about/tools/next.svg"
+                        alt="Next Tool Logo"
+                        width={30}
+                        height={30}
+                        quality={100}
+                        className="max-h-[30px]"
+                        draggable={false}
+                    />
+                    <Image
+                        id="about-section-img"
+                        src="/about/tools/react.svg"
+                        alt="React Tool Logo"
+                        width={30}
+                        height={30}
+                        quality={100}
+                        className="max-h-[30px]"
+                        draggable={false}
+                    />
+                    <Image
+                        id="about-section-img"
+                        src="/about/tools/react-query.svg"
+                        alt="React Query Tool Logo"
+                        width={30}
+                        height={30}
+                        quality={100}
+                        className="max-h-[30px]"
+                        draggable={false}
+                    />
+                    <Image
+                        id="about-section-img"
+                        src="/about/tools/tailwind.svg"
+                        alt="Tailwind Tool Logo"
+                        width={30}
+                        height={30}
+                        quality={100}
+                        className="max-h-[30px]"
+                        draggable={false}
+                    />
+                </div>
             </div>
-            <img
-                id="about-section-img"
-                src="/about/profile-photo.png"
-                alt="Profile Photo"
-                className="h-[350px] max-w-[350px] rounded-full"
-            />
+            <div className="rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 p-1">
+                <Image
+                    id="about-section-img"
+                    src="/about/profile-photo.png"
+                    alt="Profile Photo"
+                    width={490}
+                    height={490}
+                    quality={100}
+                    className="max-w-[490px] rounded-full"
+                    draggable={false}
+                />
+            </div>
         </section>
     )
 }
