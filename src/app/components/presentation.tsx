@@ -19,12 +19,14 @@ export function Presentation() {
                 </div>
                 
                 <span id="presentation-subtitle" className="max-w-[60%] text-zinc-400">
-                        I’m a front-end software engineer specialized in building accessible products using the <span
-                        className="font-bold">Javascript ecosystem</span> with React, NextJS and Tailwind.
+                    I’m a front-end software engineer specialized in building accessible products using the
+                    <span className="font-bold">Javascript ecosystem</span>
+                    with React, NextJS and Tailwind.
                 </span>
 
                 <div className="flex gap-4">
                     <Image
+                        id="about-section-img"
                         src="/about/tools/typescript.svg"
                         alt="Typescript Tool Logo"
                         width={30}
@@ -85,9 +87,8 @@ export function Presentation() {
                     />
                 </div>
             </div>
-            <div className="rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 p-1">
+            <div id="about-section-img" className="rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 p-1">
                 <Image
-                    id="about-section-img"
                     src="/about/profile-photo.png"
                     alt="Profile Photo"
                     width={490}
