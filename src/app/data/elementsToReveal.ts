@@ -15,7 +15,14 @@ export const elementsToReveal = [
     { selector: '#experience-section-title', delay: 200 },
     { selector: '#experience-section-content', delay: 300 },
     { selector: '#projects-section-title', delay: 200 },
-    { selector: '#project-card-1', delay: 300 },
-    { selector: '#project-card-2', delay: 500 },
-    { selector: '#project-card-3', delay: 700 }
+    { selector: '#project-card-1', delay: 200 },
+    { selector: '#project-card-2', delay: 300 },
+    { selector: '#project-card-3', delay: 400 },
+    { selector: '#project-card-4', delay: 500 },
+    { selector: '#project-card-5', delay: 600 },
+    { selector: '#project-card-6', delay: 700 },
+    { selector: '#project-card-7', delay: 800 },
+    { selector: '#project-card-8', delay: 900 },
+    { selector: '#project-card-9', delay: 1000 },
+    { selector: '#project-card-10', delay: 1100 }
 ]

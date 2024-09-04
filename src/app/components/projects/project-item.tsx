@@ -16,7 +16,7 @@ interface ProjectItemProps {
 export function ProjectItem({id, title, description, imageSrc, imageAlt, githubLink, productionLink, tools}: ProjectItemProps) {
     return (
         <div
-            id={`project-card-${id}`}
+            id={`project-card-${id + 1}`}
             className="relative flex flex-col rounded-sm bg-[#141f35] drop-shadow-sm transition-transform [&:hover_h3]:text-indigo-600 [&:hover_img]:scale-110"
         >
             {imageSrc && imageAlt && (
