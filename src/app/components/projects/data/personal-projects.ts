@@ -115,6 +115,25 @@ export const personalProjects = [
             'Babel',
             'Node'
         ]
+    },
+    {
+        title: 'NLW E-Sports',
+        description: 'Projeto Find your DUO, ambiente de desenvolvimento com Node, React e mobile (React Native). Trata-se de um cadastro de anúncios que permitem o usuário encontrar um DUO baseado nas informações do anúncio, como jogo, horário e discord.',
+        imageSrc: [
+            '/personal-projects/nlw-esports/home.png',
+            '/personal-projects/nlw-esports/add.png',
+            '/personal-projects/nlw-esports/prisma.png'
+        ],
+        imageAlt: 'NLW E-Sports Project',
+        githubLink: 'https://github.com/lucasdebeterco/nlw-esports',
+        productionLink: null,
+        tools: [
+            'Node',
+            'React',
+            'Typescript',
+            'Tailwindcss',
+            'Prisma ORM'
+        ]
     }
 
 ]
