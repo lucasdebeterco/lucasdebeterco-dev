@@ -26,7 +26,8 @@ export function Presentation() {
                     <Image
                         id="about-section-img"
                         src="/about/tools/typescript.svg"
-                        alt="Typescript Tool Logo"
+                        alt="Typescript"
+                        title="Typescript"
                         width={30}
                         height={30}
                         quality={100}
@@ -36,7 +37,8 @@ export function Presentation() {
                     <Image
                         id="about-section-img"
                         src="/about/tools/javascript.svg"
-                        alt="Javascript Tool Logo"
+                        alt="Javascript"
+                        title="Javascript"
                         width={30}
                         height={30}
                         quality={100}
@@ -46,7 +48,8 @@ export function Presentation() {
                     <Image
                         id="about-section-img"
                         src="/about/tools/next.svg"
-                        alt="Next Tool Logo"
+                        alt="Next"
+                        title="Next"
                         width={30}
                         height={30}
                         quality={100}
@@ -56,7 +59,8 @@ export function Presentation() {
                     <Image
                         id="about-section-img"
                         src="/about/tools/react.svg"
-                        alt="React Tool Logo"
+                        alt="React"
+                        title="React"
                         width={30}
                         height={30}
                         quality={100}
@@ -66,7 +70,8 @@ export function Presentation() {
                     <Image
                         id="about-section-img"
                         src="/about/tools/react-query.svg"
-                        alt="React Query Tool Logo"
+                        alt="React Query"
+                        title="React Query"
                         width={30}
                         height={30}
                         quality={100}
@@ -76,7 +81,8 @@ export function Presentation() {
                     <Image
                         id="about-section-img"
                         src="/about/tools/tailwind.svg"
-                        alt="Tailwind Tool Logo"
+                        alt="Tailwind"
+                        title="Tailwind"
                         width={30}
                         height={30}
                         quality={100}
@@ -89,6 +95,7 @@ export function Presentation() {
                 <Image
                     src="/about/profile-photo.png"
                     alt="Profile Photo"
+                    title="Profile Photo"
                     width={490}
                     height={490}
                     quality={100}
