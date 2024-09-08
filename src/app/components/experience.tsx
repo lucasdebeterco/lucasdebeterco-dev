@@ -35,6 +35,7 @@ export function Experience() {
                                     <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:whitespace-nowrap [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
                                         <li>React.js</li>
                                         <li>TypeScript</li>
+                                        <li>Next.js</li>
                                         <li>API REST</li>
                                         <li>Software Architecture</li>
                                         <li>Design System</li>
@@ -55,7 +56,7 @@ export function Experience() {
                         </div>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                After internship time, I kept taking on new responsibilities, new technologies and even mentoring new people on the team. During this period, the company began a technology update process, where I had contact and specialized myself in ReactJS, Typescript, RESTful APIs, React Query and others modern concepts of the Front-end ecosystem.
+                                When I was hired from my internship, I kept taking on new responsibilities, working with new technologies and even mentoring new people on the team. During this period, the company began a technology update process, where I had contact and specialized myself in ReactJS, Typescript, RESTful APIs, React Query and others modern concepts of the Front-end ecosystem.
                             </p>
 
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
@@ -103,7 +104,7 @@ export function Experience() {
                         </div>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                Internship where I was responsible for maintaining the E-Commerce platform and client websites. Over time, I gained new responsibilities, such as developing new interfaces, got involved in large projects and created templates for clients from scratch.
+                                I was responsible for maintaining the E-Commerce platform and client websites. Over time, I gained new responsibilities, such as developing new interfaces, got involved in large projects and created templates for clients from scratch.
                             </p>
 
                             <ul className="ml-8 flex list-disc flex-col gap-3 text-slate-300">
