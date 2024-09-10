@@ -16,6 +16,24 @@ export const personalProjects: CardItemProps[] = [
         ]
     },
     {
+        title: 'Coffee Delivery',
+        description: 'Application to manage a fictional coffee shop, where I was able to apply the concepts of Context-API to store items in the cart, routing with React router dom and searching for the user location through a third-party API. Developed using React.js, Typescript and Styled Components.',
+        imageSrc: [
+            '/personal-projects/coffee-delivery/home.png',
+            '/personal-projects/coffee-delivery/cart.png'
+        ],
+        githubLink: 'https://github.com/lucasdebeterco/coffee-delivery',
+        productionLink: 'https://coffee-delivery.lucasdebeterco.dev',
+        tools: [
+            'React.js',
+            'TypeScript',
+            'Styled-Components',
+            'Context-API',
+            'React-router-dom',
+            'React-hook-form'
+        ]
+    },
+    {
         title: 'Letmeask (NLW Together)',
         description: 'Projeto de uma aplicação em React/TypeScript, com objetivo do desenvolvimento de uma central de salas de perguntas, onde usuários podem criar salas, compartilhar para outras pessoas e cadastrar suas dúvidas. Usuários admins podem dar "Highlight" em uma pergunta ou fechá-la quando estiver respondida. Toda a parte de persistência de dados e deploy foi feita utilizando as ferramentas do Firebase (Realtime Database e Firebase Hosting).',
         imageSrc: [
