@@ -16,7 +16,7 @@ export function ProfessionalAchievements() {
                         title={item.title}
                         description={item.description}
                         imageSrc={item.imageSrc[0]}
-                        imageAlt={item.imageAlt}
+                        imageAlt={`${item.title} Project`}
                         githubLink={item.githubLink}
                         productionLink={item.productionLink}
                         tools={item.tools}

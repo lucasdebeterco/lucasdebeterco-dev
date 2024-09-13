@@ -1,18 +1,18 @@
-export const personalProjects = [
+import { CardItemProps } from '@/app/types/card-item'
+
+export const personalProjects: CardItemProps[] = [
     {
         title: 'Pizza Shop',
         description: 'aaaaa',
         imageSrc: [
             '/personal-projects/pizza-shop/pizza-shop.png'
         ],
-        imageAlt: 'Pizza Shop Project',
         githubLink: 'https://github.com/lucasdebeterco/pizza-shop',
-        productionLink: null,
         tools: [
             'Next.js',
-            'ReactJS',
+            'React.js',
             'Typescript',
-            'Tailwind CSS'
+            'Tailwind-CSS'
         ]
     },
     {
@@ -22,14 +22,13 @@ export const personalProjects = [
             '/personal-projects/nlw-together-letmeask/login.png',
             '/personal-projects/nlw-together-letmeask/sala.png'
         ],
-        imageAlt: 'Letmeask Project',
         githubLink: 'https://github.com/lucasdebeterco/letmeask-nlw-together',
         productionLink: 'https://letmeask-120db.web.app/',
         tools: [
-            'React',
+            'React.js',
             'Firebase',
             'TypeScript',
-            'Styled Components'
+            'Styled-Components'
         ]
     },
     {
@@ -38,14 +37,12 @@ export const personalProjects = [
         imageSrc: [
             '/personal-projects/blog-router/home.png',
         ],
-        imageAlt: 'Blog Router Project',
         githubLink: 'https://github.com/lucasdebeterco/blog-router-alura',
-        productionLink: null,
         tools: [
-            'React',
+            'React.js',
             'TypeScript',
-            'CSS Modules',
-            'React Router Dom'
+            'CSS-Modules',
+            'React-Router-Dom'
         ]
     },
     {
@@ -55,16 +52,14 @@ export const personalProjects = [
             '/personal-projects/ignite-timer/task.png',
             '/personal-projects/ignite-timer/task-list.png',
         ],
-        imageAlt: 'Ignite Timer Project',
         githubLink: 'https://github.com/lucasdebeterco/ignite-timer',
-        productionLink: null,
         tools: [
-            'React',
+            'React.js',
             'TypeScript',
-            'Styled Components',
+            'Styled-Components',
             'Zod',
             'Immer',
-            'React Router Dom'
+            'React-Router-Dom'
         ]
     },
     {
@@ -74,15 +69,14 @@ export const personalProjects = [
             '/personal-projects/github-blog/home.png',
             '/personal-projects/github-blog/post.png',
         ],
-        imageAlt: 'Github Blog Project',
         githubLink: 'https://github.com/lucasdebeterco/github-blog',
         productionLink: 'https://github-blog.lucasdebeterco.dev/',
         tools: [
-            'React',
+            'React.js',
             'TypeScript',
             'Axios',
-            'React Router Dom',
-            'Tailwind CSS',
+            'React-Router-Dom',
+            'Tailwind-CSS',
             'Date-fns'
         ]
     },
@@ -92,14 +86,13 @@ export const personalProjects = [
         imageSrc: [
             '/personal-projects/todo-list/home.png'
         ],
-        imageAlt: 'ToDo List Project',
         githubLink: 'https://github.com/lucasdebeterco/todo-list',
         productionLink: 'https://main.dzgmv8kqwlxwq.amplifyapp.com/',
         tools: [
-            'React',
+            'React.js',
             'TypeScript',
-            'Tailwind CSS',
-            'Local Storage'
+            'Tailwind-CSS',
+            'Local-Storage'
         ]
     },
     {
@@ -108,9 +101,7 @@ export const personalProjects = [
         imageSrc: [
             '/personal-projects/es-converter/files.png'
         ],
-        imageAlt: 'ES Converter Project',
         githubLink: 'https://github.com/lucasdebeterco/es-converter',
-        productionLink: null,
         tools: [
             'Babel',
             'Node'
@@ -124,15 +115,13 @@ export const personalProjects = [
             '/personal-projects/nlw-esports/add.png',
             '/personal-projects/nlw-esports/prisma.png'
         ],
-        imageAlt: 'NLW E-Sports Project',
         githubLink: 'https://github.com/lucasdebeterco/nlw-esports',
-        productionLink: null,
         tools: [
             'Node',
-            'React',
+            'React.js',
             'Typescript',
-            'Tailwindcss',
-            'Prisma ORM'
+            'Tailwind-CSS',
+            'Prisma-ORM'
         ]
     },
     {
@@ -141,13 +130,11 @@ export const personalProjects = [
         imageSrc: [
             '/personal-projects/aluroni/home.png'
         ],
-        imageAlt: 'Aluroni Project',
         githubLink: 'https://github.com/lucasdebeterco/aluroni',
-        productionLink: null,
         tools: [
-            'React',
+            'React.js',
             'Typescript',
-            'CSS Modules'
+            'CSS-Modules'
         ]
     },
     {
@@ -156,13 +143,12 @@ export const personalProjects = [
         imageSrc: [
             '/personal-projects/ignite-feed/home.png'
         ],
-        imageAlt: 'Ignite Feed Project',
         githubLink: 'https://github.com/lucasdebeterco/ignite-feed',
-        productionLink: null,
+        productionLink: 'https://ignite-feed.lucasdebeterco.dev',
         tools: [
             'React',
             'Typescript',
-            'CSS Modules',
+            'CSS-Modules',
             'Date-FNS'
         ]
     },
@@ -172,7 +158,6 @@ export const personalProjects = [
         imageSrc: [
             '/personal-projects/eslint-config/npm-image.png'
         ],
-        imageAlt: 'Ignite Feed Project',
         githubLink: 'https://github.com/lucasdebeterco/eslint-config-lucasdebeterco',
         productionLink: 'https://www.npmjs.com/package/@lucas.debeterco/eslint-config',
         tools: [
@@ -180,6 +165,19 @@ export const personalProjects = [
             'Node',
             'NPM'
         ]
+    },
+    {
+        title: 'Alura Space',
+        description: 'Project developed during an Alura platform course, with the main objective of creating filters with Javascript. Developed with React.js and SASS',
+        imageSrc: [
+            '/personal-projects/alura-space/home.png'
+        ],
+        githubLink: 'https://github.com/lucasdebeterco/alura-space',
+        productionLink: 'https://alura-space.lucasdebeterco.dev',
+        tools: [
+            'React.js',
+            'SASS',
+            'Javascript'
+        ]
     }
-
 ]

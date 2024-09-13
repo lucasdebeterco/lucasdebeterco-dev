@@ -1,5 +1,6 @@
 import { personalProjects } from '@/app/components/projects/data/personal-projects'
 import { ProjectItem } from '@/app/components/projects/project-item'
+import { CardItemProps } from '@/app/types/card-item'
 
 export function PersonalProjects() {
     return (
@@ -16,7 +17,7 @@ export function PersonalProjects() {
                         title={item.title}
                         description={item.description}
                         imageSrc={item.imageSrc[0]}
-                        imageAlt={item.imageAlt}
+                        imageAlt={`${item.title} Project`}
                         githubLink={item.githubLink}
                         productionLink={item.productionLink}
                         tools={item.tools}
