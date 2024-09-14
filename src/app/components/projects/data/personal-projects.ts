@@ -26,7 +26,7 @@ export const personalProjects: CardItemProps[] = [
         productionLink: 'https://coffee-delivery.lucasdebeterco.dev',
         tools: [
             'React.js',
-            'TypeScript',
+            'Typescript',
             'Styled-Components',
             'Context-API',
             'React-router-dom',
@@ -35,7 +35,7 @@ export const personalProjects: CardItemProps[] = [
     },
     {
         title: 'Letmeask (NLW Together)',
-        description: 'Projeto de uma aplicação em React/TypeScript, com objetivo do desenvolvimento de uma central de salas de perguntas, onde usuários podem criar salas, compartilhar para outras pessoas e cadastrar suas dúvidas. Usuários admins podem dar "Highlight" em uma pergunta ou fechá-la quando estiver respondida. Toda a parte de persistência de dados e deploy foi feita utilizando as ferramentas do Firebase (Realtime Database e Firebase Hosting).',
+        description: 'Projeto de uma aplicação em React/Typescript, com objetivo do desenvolvimento de uma central de salas de perguntas, onde usuários podem criar salas, compartilhar para outras pessoas e cadastrar suas dúvidas. Usuários admins podem dar "Highlight" em uma pergunta ou fechá-la quando estiver respondida. Toda a parte de persistência de dados e deploy foi feita utilizando as ferramentas do Firebase (Realtime Database e Firebase Hosting).',
         imageSrc: [
             '/personal-projects/nlw-together-letmeask/login.png',
             '/personal-projects/nlw-together-letmeask/sala.png'
@@ -45,27 +45,27 @@ export const personalProjects: CardItemProps[] = [
         tools: [
             'React.js',
             'Firebase',
-            'TypeScript',
+            'Typescript',
             'Styled-Components'
         ]
     },
     {
         title: 'Blog Router (Alura)',
-        description: 'Projeto básico para praticar os conceitos da bliblioteca de roteamento React Router DOM, a aplicação se trata de um blog pessoal para listagem de artigos em ReactJS e TypeScript.',
+        description: 'Projeto básico para praticar os conceitos da bliblioteca de roteamento React Router DOM, a aplicação se trata de um blog pessoal para listagem de artigos em React.js e Typescript.',
         imageSrc: [
             '/personal-projects/blog-router/home.png',
         ],
         githubLink: 'https://github.com/lucasdebeterco/blog-router-alura',
         tools: [
             'React.js',
-            'TypeScript',
+            'Typescript',
             'CSS-Modules',
-            'React-Router-Dom'
+            'React-router-dom'
         ]
     },
     {
         title: 'Ignite Timer',
-        description: 'Aplicação para gestão de tempo, permite criação de uma tarefa e contagem de tempo gasto no desenvolvimento de cada tarefa. A aplicação foi desenvolvida utilizando ReactJS e Styled Components. Neste projeto, utilizei biblotecas como Zod para validação de tipagens com base em schemas e o Immer para trabalhar com estados imutáveis de forma facilitada',
+        description: 'Aplicação para gestão de tempo, permite criação de uma tarefa e contagem de tempo gasto no desenvolvimento de cada tarefa. A aplicação foi desenvolvida utilizando React.js e Styled Components. Neste projeto, utilizei biblotecas como Zod para validação de tipagens com base em schemas e o Immer para trabalhar com estados imutáveis de forma facilitada',
         imageSrc: [
             '/personal-projects/ignite-timer/task.png',
             '/personal-projects/ignite-timer/task-list.png',
@@ -73,7 +73,7 @@ export const personalProjects: CardItemProps[] = [
         githubLink: 'https://github.com/lucasdebeterco/ignite-timer',
         tools: [
             'React.js',
-            'TypeScript',
+            'Typescript',
             'Styled-Components',
             'Zod',
             'Immer',
@@ -91,7 +91,7 @@ export const personalProjects: CardItemProps[] = [
         productionLink: 'https://github-blog.lucasdebeterco.dev/',
         tools: [
             'React.js',
-            'TypeScript',
+            'Typescript',
             'Axios',
             'React-Router-Dom',
             'Tailwind-CSS',
@@ -108,9 +108,9 @@ export const personalProjects: CardItemProps[] = [
         productionLink: 'https://main.dzgmv8kqwlxwq.amplifyapp.com/',
         tools: [
             'React.js',
-            'TypeScript',
+            'Typescript',
             'Tailwind-CSS',
-            'Local-Storage'
+            'Local-storage'
         ]
     },
     {
@@ -144,7 +144,7 @@ export const personalProjects: CardItemProps[] = [
     },
     {
         title: 'Aluroni',
-        description: 'Restaurant application, React, TypeScript and CSS Modules. Application with meals search input, filters by category (pasta, meat..), sorting by price, portion, etc.',
+        description: 'Restaurant application, React, Typescript and CSS Modules. Application with meals search input, filters by category (pasta, meat..), sorting by price, portion, etc.',
         imageSrc: [
             '/personal-projects/aluroni/home.png'
         ],
@@ -196,6 +196,22 @@ export const personalProjects: CardItemProps[] = [
             'React.js',
             'SASS',
             'Javascript'
+        ]
+    },
+    {
+        title: 'DT Money',
+        description: 'This project was made to create a financial control for the user. The user can add their day-to-day financial inflows and outflows. You can also use the search field to filter by specific items or categories. This application was created using React.js and Typescript and Tailwind, the forms were made with react-hook-form and zod for validations.',
+        imageSrc: [
+            '/personal-projects/dt-money/home.png'
+        ],
+        githubLink: 'https://github.com/lucasdebeterco/dt-money',
+        productionLink: 'https://dt-money.lucasdebeterco.dev',
+        tools: [
+            'React.js',
+            'Typescript',
+            'Tailwind',
+            'React-hook-form',
+            'Zod'
         ]
     }
 ]

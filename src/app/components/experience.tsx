@@ -34,7 +34,7 @@ export function Experience() {
 
                                     <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:whitespace-nowrap [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
                                         <li>React.js</li>
-                                        <li>TypeScript</li>
+                                        <li>Typescript</li>
                                         <li>Next.js</li>
                                         <li>API REST</li>
                                         <li>Software Architecture</li>
@@ -56,11 +56,11 @@ export function Experience() {
                         </div>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                When I was hired from my internship, I kept taking on new responsibilities, working with new technologies and even mentoring new people on the team. During this period, the company began a technology update process, where I had contact and specialized myself in ReactJS, Typescript, RESTful APIs, React Query and others modern concepts of the Front-end ecosystem.
+                                When I was hired from my internship, I kept taking on new responsibilities, working with new technologies and even mentoring new people on the team. During this period, the company began a technology update process, where I had contact and specialized myself in React.js, Typescript, RESTful APIs, React Query and others modern concepts of the Front-end ecosystem.
                             </p>
 
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
-                                <li>Build and architect Front-end projects from scratch using ReactJS and Typescript.</li>
+                                <li>Build and architect Front-end projects from scratch using React.js and Typescript.</li>
                                 <li>Breaking down monolithic architectures into agile and manageable components using micro-frontends.</li>
                                 <li>CI/CD practices using AWS Amplify.</li>
                                 <li>Help other developers with pair programming and code reviews.</li>
