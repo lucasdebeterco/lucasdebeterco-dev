@@ -56,7 +56,7 @@ export function Experience() {
                         </div>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                When I was hired from my internship, I kept taking on new responsibilities, working with new technologies and even mentoring new people on the team. During this period, the company began a technology update process, where I had contact and specialized myself in React.js, Typescript, RESTful APIs, React Query and others modern concepts of the Front-end ecosystem.
+                                When I was hired from my internship, I kept taking on new responsibilities, working with new technologies and even mentoring new people on the team. During this period, the company began a technology update process, where I had contact and specialized myself in React.js, Next.js, Typescript, RESTful APIs, React Query and others modern concepts of the Front-end ecosystem.
                             </p>
 
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
