@@ -89,6 +89,17 @@ export function Presentation() {
                         className="max-h-[30px]"
                         draggable={false}
                     />
+                    <Image
+                        id="about-section-img"
+                        src="/about/tools/storybook.svg"
+                        alt="Storybook"
+                        title="Storybook"
+                        width={30}
+                        height={30}
+                        quality={100}
+                        className="max-h-[30px]"
+                        draggable={false}
+                    />
                 </div>
             </div>
             <div id="about-section-img" className="rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 p-1">
