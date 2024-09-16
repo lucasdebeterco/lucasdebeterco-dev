@@ -21,7 +21,7 @@ export function About() {
                         <h3 className="font-bold">Get In Touch!</h3>
                         <div className="flex justify-between">
                             <Link href="mailto:lucasdebeterco@gmail.com"
-                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-600">
+                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500">
                                 <div
                                     className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
                                     <Envelope size={24}/>
@@ -38,7 +38,7 @@ export function About() {
                                 target="_blank"
                                 href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
                                 rel="noreferrer"
-                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-600"
+                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500"
                             >
                                 <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
                                     <GithubLogo size={24}/>
@@ -54,7 +54,7 @@ export function About() {
                             <Link
                                 target="_blank"
                                 href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
-                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-600"
+                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500"
                                 rel="noreferrer"
                             >
                                 <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
@@ -71,7 +71,7 @@ export function About() {
                             <Link
                                 target="_blank"
                                 href="https://instagram.com/lucasdebeterco/"
-                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-600"
+                                className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500"
                                 rel="noreferrer"
                             >
                                 <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">

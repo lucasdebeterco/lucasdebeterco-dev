@@ -9,6 +9,7 @@ import { Header } from '@/app/components/header/header'
 import { Presentation } from '@/app/components/presentation'
 import { PersonalProjects } from '@/app/components/projects/personal-projects'
 import { ProfessionalAchievements } from '@/app/components/projects/profession-achievements'
+import { Tools } from '@/app/components/tools'
 import { elementsToReveal } from '@/app/data/elementsToReveal'
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
             <div className="mx-auto flex max-w-[1360px] flex-col gap-28 px-10 pt-28">
                 <Presentation />
                 <About />
+                <Tools />
                 <Experience/>
                 <ProfessionalAchievements />
                 <PersonalProjects />

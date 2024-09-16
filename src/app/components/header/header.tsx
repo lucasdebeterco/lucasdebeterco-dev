@@ -14,21 +14,27 @@ export function Header() {
                         About
                     </HeaderLink>
                 </div>
+                <div id="tools-section-link">
+                    <HeaderLink sectionId="tools-section">
+                        <span className="mr-1 text-indigo-500">2.</span>
+                        Tools
+                    </HeaderLink>
+                </div>
                 <div id="experience-section-link">
                     <HeaderLink sectionId="experience-section">
-                        <span className="mr-1 text-indigo-500">2.</span>
+                        <span className="mr-1 text-indigo-500">3.</span>
                         Experience
                     </HeaderLink>
                 </div>
                 <div id="professional-achievements-section-link">
                     <HeaderLink sectionId="professional-achievements">
-                        <span className="mr-1 text-indigo-500">3.</span>
+                        <span className="mr-1 text-indigo-500">4.</span>
                         Professional Achievements
                     </HeaderLink>
                 </div>
                 <div id="projects-section-link">
                     <HeaderLink sectionId="projects-section">
-                        <span className="mr-1 text-indigo-500">3.</span>
+                        <span className="mr-1 text-indigo-500">5.</span>
                         Projects
                     </HeaderLink>
                 </div>

@@ -5,7 +5,7 @@ export function ProfessionalAchievements() {
     return (
         <section id="professional-achievements" className="flex flex-col justify-center gap-6">
             <h2 id="professional-achievements-section-title" className="text-xl">
-                <span className="mr-1 text-indigo-500">3.</span>
+                <span className="mr-1 text-indigo-500">4.</span>
                     Professional Achievements
             </h2>
 

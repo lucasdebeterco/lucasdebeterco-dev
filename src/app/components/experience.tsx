@@ -11,52 +11,40 @@ export function Experience() {
     return (
         <section id="experience-section" className="flex flex-col gap-6">
             <h2 id="experience-section-title" className="text-xl">
-                <span className="mr-1 text-indigo-500">2.</span>
+                <span className="mr-1 text-indigo-500">3.</span>
                 Experience
             </h2>
 
-            <div id="experience-section-content" className="flex px-12">
-                <Accordion type="multiple" className="w-full gap-3 text-sm [&>div:hover]:bg-[#141f35] [&>div:hover]:drop-shadow-sm [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
-                    <AccordionItem value="item-1 flex">
-                        <div className="flex items-center">
-                            <div className="mt-3 flex w-1/5 flex-col text-slate-400">
-                                <span>MAR 2021 - PRESENT</span>
-                                <span>3 years 6 months</span>
-                            </div>
-                            <AccordionTrigger className="w-4/5">
-                                <div className="flex flex-col text-left">
-                                    <div className="flex flex-col text-base">
-                                        <h3 className="text-lg font-bold transition">Front-End Developer</h3>
-                                        <span className="flex gap-2 text-sm">
-                                            Magazord Tecnologia <Image src="/experience/magazord-logo.svg" alt="Logo Magazord" width={16} height={18}/>
-                                        </span>
-                                    </div>
+            <div id="experience-section-content" className="flex gap-4 px-8">
+                <div className="flex w-[188px] flex-col items-center justify-between gap-2 py-6 text-sm">
+                    <div className="mt-3 flex flex-col text-slate-400">
+                        <span>MAR 2021 - PRESENT</span>
+                    </div>
+                    <div className="relative h-full w-[3px] bg-indigo-900 before:absolute before:left-[-4px] before:size-[10px] before:rounded-full before:bg-indigo-700 after:absolute after:bottom-0 after:left-[-4px] after:size-[10px] after:rounded-full after:bg-indigo-700"></div>
+                    <div className="mt-3 flex flex-col text-slate-400">
+                        <span>APR 2020 - MAR 2021</span>
+                    </div>
+                </div>
 
-                                    <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:whitespace-nowrap [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
-                                        <li>React.js</li>
-                                        <li>Typescript</li>
-                                        <li>Next.js</li>
-                                        <li>API REST</li>
-                                        <li>Software Architecture</li>
-                                        <li>Design System</li>
-                                        <li>Zustand | ContextAPI</li>
-                                        <li>Cypress</li>
-                                        <li>CI/CD</li>
-                                        <li>JavaScript</li>
-                                        <li>SCSS | CSS | Tailwind | Styled-components</li>
-                                        <li>Twig Template Engine</li>
-                                        <li>Vite</li>
-                                        <li>ESLint</li>
-                                        <li>Agile | Scrum</li>
-                                        <li>Basic SQL | Postgres</li>
-                                        <li>Basic PHP</li>
-                                    </ul>
-                                </div>
-                            </AccordionTrigger>
-                        </div>
+                <Accordion type="multiple" className="flex w-full flex-col gap-5 text-sm [&>div:hover]:bg-[#141f35] [&>div:hover]:drop-shadow-sm [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
+                    <AccordionItem value="item-1 flex">
+                        <AccordionTrigger className="w-full">
+                            <div className="flex flex-col gap-1">
+                                <h3 className="text-lg font-bold transition">
+                                    Front-End Developer
+                                </h3>
+                                <span className="flex gap-2 text-sm">
+                                    Magazord Tecnologia <Image src="/experience/magazord-logo.svg" alt="Logo Magazord" width={16} height={18}/>
+                                </span>
+                            </div>
+                        </AccordionTrigger>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                When I was hired from my internship, I kept taking on new responsibilities, working with new technologies and even mentoring new people on the team. During this period, the company began a technology update process, where I had contact and specialized myself in React.js, Next.js, Typescript, RESTful APIs, React Query and others modern concepts of the Front-end ecosystem.
+                                When I was hired from my internship, I kept taking on new responsibilities, working with
+                                new technologies and even mentoring new people on the team. During this period, the
+                                company began a technology update process, where I had contact and specialized myself in
+                                React.js, Next.js, Typescript, RESTful APIs, React Query and others modern concepts of
+                                the Front-end ecosystem.
                             </p>
 
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
@@ -76,35 +64,21 @@ export function Experience() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                        <div className="flex items-center">
-                            <div className="mt-3 flex w-1/5 flex-col text-slate-400">
-                                <span>APR 2020 - MAR 2021</span>
-                                <span>1 year</span>
+                        <AccordionTrigger className="w-full">
+                            <div className="flex flex-col gap-1">
+                                <h3 className="text-lg font-bold transition">
+                                    Front-End Developer (Internship)
+                                </h3>
+                                <span className="flex gap-2 text-sm">
+                                    Magazord Tecnologia <Image src="/experience/magazord-logo.svg" alt="Logo Magazord" width={16} height={18}/>
+                                </span>
                             </div>
-                            <AccordionTrigger className="w-4/5">
-                                <div className="flex flex-col text-left">
-                                    <div className="flex flex-col text-base">
-                                        <h3 className="text-lg font-bold transition">Front-End Developer (Internship)</h3>
-                                        <span className="flex gap-2 text-sm">
-                                        Magazord Tecnologia <Image src="/experience/magazord-logo.svg" alt="Logo Magazord" width={16} height={18}/>
-                                        </span>
-                                    </div>
-
-                                    <ul className="mt-6 flex flex-wrap gap-2 text-xs [&>li]:whitespace-nowrap [&>li]:rounded-full [&>li]:bg-indigo-900/40 [&>li]:px-3 [&>li]:py-2 [&>li]:text-indigo-200">
-                                        <li>HTML</li>
-                                        <li>SASS | CSS</li>
-                                        <li>Twig Template Engine</li>
-                                        <li>JavaScript</li>
-                                        <li>JQuery</li>
-                                        <li>Basic PHP</li>
-                                        <li>PostgreSQL</li>
-                                    </ul>
-                                </div>
-                            </AccordionTrigger>
-                        </div>
+                        </AccordionTrigger>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                I was responsible for maintaining the E-Commerce platform and client websites. Over time, I gained new responsibilities, such as developing new interfaces, got involved in large projects and created templates for clients from scratch.
+                                I was responsible for maintaining the E-Commerce platform and client websites. Over
+                                time, I gained new responsibilities, such as developing new interfaces, got involved in
+                                large projects and created templates for clients from scratch.
                             </p>
 
                             <ul className="ml-8 flex list-disc flex-col gap-3 text-slate-300">
@@ -118,6 +92,5 @@ export function Experience() {
                     </AccordionItem>
                 </Accordion>
             </div>
-        </section>
-    )
+        </section>)
 }

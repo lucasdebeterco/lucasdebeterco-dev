@@ -5,7 +5,8 @@ export const personalProjects: CardItemProps[] = [
         title: 'Pizza Shop',
         description: 'aaaaa',
         imageSrc: [
-            '/personal-projects/pizza-shop/pizza-shop.png'
+            '/personal-projects/pizza-shop/pizza-shop.png',
+            '/personal-projects/pizza-shop/ordes.png'
         ],
         githubLink: 'https://github.com/lucasdebeterco/pizza-shop',
         tools: [

@@ -1,12 +1,11 @@
 import { personalProjects } from '@/app/components/projects/data/personal-projects'
 import { ProjectItem } from '@/app/components/projects/project-item'
-import { CardItemProps } from '@/app/types/card-item'
 
 export function PersonalProjects() {
     return (
         <section id="projects-section" className="flex flex-col gap-6">
             <h2 id="projects-section-title" className="text-xl">
-                <span className="mr-1 text-indigo-500">4.</span>
+                <span className="mr-1 text-indigo-500">5.</span>
                 Personal Projects
             </h2>
 
