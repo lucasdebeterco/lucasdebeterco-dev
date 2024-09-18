@@ -1,5 +1,8 @@
-import { Envelope, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 import Link from 'next/link'
+import { CiLinkedin } from 'react-icons/ci'
+import { FaInstagram } from 'react-icons/fa'
+import { FiGithub } from 'react-icons/fi'
+import { MdOutlineAlternateEmail } from 'react-icons/md'
 
 export function About() {
     return (
@@ -24,7 +27,7 @@ export function About() {
                                 className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500">
                                 <div
                                     className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
-                                    <Envelope size={24}/>
+                                    <MdOutlineAlternateEmail size={24}/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Email</span>
@@ -41,7 +44,7 @@ export function About() {
                                 className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500"
                             >
                                 <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
-                                    <GithubLogo size={24}/>
+                                    <FiGithub size={24}/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Github</span>
@@ -58,7 +61,7 @@ export function About() {
                                 rel="noreferrer"
                             >
                                 <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
-                                    <LinkedinLogo size={24}/>
+                                    <CiLinkedin size={24} />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">LinkedIn</span>
@@ -75,7 +78,7 @@ export function About() {
                                 rel="noreferrer"
                             >
                                 <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
-                                    <InstagramLogo size={24}/>
+                                    <FaInstagram size={24}/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-400">Instagram</span>

@@ -1,6 +1,7 @@
-import { ArrowSquareOut, FolderSimple, GithubLogo } from '@phosphor-icons/react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FiGithub } from 'react-icons/fi'
+import { PiArrowSquareOut, PiFolderSimple } from 'react-icons/pi'
 
 interface ProjectItemProps {
     id: number
@@ -34,17 +35,17 @@ export function ProjectItem({id, title, description, imageSrc, imageAlt, githubL
             <div className="flex flex-col gap-6 p-8">
                 <div className="flex items-center justify-between">
                     <div className="text-indigo-600">
-                        <FolderSimple weight="light" size={40}/>
+                        <PiFolderSimple size={40}/>
                     </div>
 
-                    <div className="flex gap-3">
+                    <div className="flex items-center gap-3">
                         {githubLink && (
                             <Link
                                 href={githubLink}
                                 className="text-slate-400 transition hover:text-indigo-500"
                                 target="_blank"
                             >
-                                <GithubLogo size={28}/>
+                                <FiGithub size={24}/>
                             </Link>
                         )}
                         {productionLink && (
@@ -53,7 +54,7 @@ export function ProjectItem({id, title, description, imageSrc, imageAlt, githubL
                                 className="text-slate-400 transition hover:text-indigo-500"
                                 target="_blank"
                             >
-                                <ArrowSquareOut size={28}/>
+                                <PiArrowSquareOut size={30}/>
                             </Link>
                         )}
                     </div>

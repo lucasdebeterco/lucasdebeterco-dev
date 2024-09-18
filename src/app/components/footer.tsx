@@ -1,5 +1,8 @@
-import { Envelope, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 import Link from 'next/link'
+import { FaInstagram } from 'react-icons/fa'
+import { FiGithub } from 'react-icons/fi'
+import { MdOutlineAlternateEmail } from 'react-icons/md'
+import { TbBrandLinkedin } from 'react-icons/tb'
 
 export function Footer() {
     return (
@@ -8,14 +11,14 @@ export function Footer() {
                 <span className="text-lg">Developed by <strong className="text-violet-500">Lucas Debeterco</strong> in 2024</span>
                 <span>Built with Next.js and Tailwind CSS, deployed with Vercel.</span>
             </div>
-            <div className="flex gap-4">
+            <div className="flex items-center gap-4">
                 <Link
                     target="_blank"
                     href="https://github.com/lucasdebeterco"
                     className="transition hover:text-indigo-600"
                     rel="noreferrer"
                 >
-                    <GithubLogo size={32} />
+                    <FiGithub size={28} />
                 </Link>
                 <Link
                     target="_blank"
@@ -23,13 +26,13 @@ export function Footer() {
                     className="transition hover:text-indigo-600"
                     rel="noreferrer"
                 >
-                    <LinkedinLogo size={32} />
+                    <TbBrandLinkedin size={32} />
                 </Link>
                 <Link
                     href="mailto:lucasdebeterco@gmail.com"
                     className="transition hover:text-indigo-600"
                 >
-                    <Envelope size={32} />
+                    <MdOutlineAlternateEmail size={28} />
                 </Link>
                 <Link
                     target="_blank"
@@ -37,7 +40,7 @@ export function Footer() {
                     className="transition hover:text-indigo-600"
                     rel="noreferrer"
                 >
-                    <InstagramLogo size={32} />
+                    <FaInstagram size={28} />
                 </Link>
             </div>
         </footer>

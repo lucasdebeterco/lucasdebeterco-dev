@@ -11,8 +11,7 @@ export function Presentation() {
                         Lucas Debeterco.
                     </h1>
                     <h2 className="text-3xl" id="presentation-title">
-                        A <strong
-                            className="bg-gradient-to-r from-indigo-500 to-purple-700 bg-clip-text text-4xl font-extrabold text-transparent">
+                        A <strong className="bg-gradient-to-r from-indigo-500 to-purple-700 bg-clip-text text-4xl font-extrabold text-transparent">
                             Front-end developer
                         </strong> creating web solutions for modern challanges.
                     </h2>
