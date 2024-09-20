@@ -26,7 +26,7 @@ export function Experience() {
                     </div>
                 </div>
 
-                <Accordion type="multiple" className="flex w-full flex-col gap-5 text-sm [&>div:hover]:bg-[#141f35] [&>div:hover]:drop-shadow-sm [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
+                <Accordion type="multiple" className="flex w-full flex-col gap-5 text-sm [&>div:hover]:bg-background-light [&>div:hover]:drop-shadow-sm [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
                     <AccordionItem value="item-1 flex">
                         <AccordionTrigger className="w-full">
                             <div className="flex flex-col gap-1">

@@ -3,17 +3,18 @@ import { CardItemProps } from '@/app/types/card-item'
 export const personalProjects: CardItemProps[] = [
     {
         title: 'Pizza Shop',
-        description: 'aaaaa',
+        description: 'Dashboard made with React.js and Tailwind for managing a restaurant and handling order management, similar to the iFood app. In this project, I learned a lot about integrating a frontend app with an external API. All API communication were made using React Query for the requests, caching, and implementing optimistic UI. The optimistic UI concept was a fantastic approach that I had not worked with before, and it was exciting to build an application using it. Additionally, I applied multiple testing methods, using testing-library/vitest for unit testing and Playwright for E2E testing. Another interesting library I used was Recharts, which I applied to create graphs.',
         imageSrc: [
             '/personal-projects/pizza-shop/pizza-shop.png',
             '/personal-projects/pizza-shop/ordes.png'
         ],
         githubLink: 'https://github.com/lucasdebeterco/pizza-shop',
         tools: [
-            'Next.js',
             'React.js',
             'Typescript',
-            'Tailwind-CSS'
+            'Tailwind',
+            'Playwright',
+            'Recharts'
         ]
     },
     {
@@ -28,7 +29,7 @@ export const personalProjects: CardItemProps[] = [
         tools: [
             'React.js',
             'Typescript',
-            'Styled-Components',
+            'Styled-components',
             'Context-API',
             'React-router-dom',
             'React-hook-form'
@@ -47,7 +48,7 @@ export const personalProjects: CardItemProps[] = [
             'React.js',
             'Firebase',
             'Typescript',
-            'Styled-Components'
+            'Styled-components'
         ]
     },
     {
@@ -60,7 +61,7 @@ export const personalProjects: CardItemProps[] = [
         tools: [
             'React.js',
             'Typescript',
-            'CSS-Modules',
+            'Css-modules',
             'React-router-dom'
         ]
     },
@@ -78,7 +79,7 @@ export const personalProjects: CardItemProps[] = [
             'Styled-Components',
             'Zod',
             'Immer',
-            'React-Router-Dom'
+            'React-router-rom'
         ]
     },
     {

@@ -18,7 +18,7 @@ export function ProjectItem({id, title, description, imageSrc, imageAlt, githubL
     return (
         <div
             id={`project-card-${id + 1}`}
-            className="relative flex flex-col rounded-sm bg-[#141f35] drop-shadow-sm transition-transform [&:hover_h3]:text-indigo-600 [&:hover_img]:scale-110"
+            className="relative flex flex-col rounded-sm bg-background-light drop-shadow-sm transition-transform [&:hover_h3]:text-indigo-600 [&:hover_img]:scale-110"
         >
             {imageSrc && imageAlt && (
                 <div className="h-[240px] overflow-hidden">

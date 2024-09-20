@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    background: theme('colors.slate.900');
+    background: theme('colors.background');
     color: theme('colors.slate.200');
     scroll-behavior: smooth;
 

@@ -26,7 +26,7 @@ export function About() {
                             <Link href="mailto:lucasdebeterco@gmail.com"
                                 className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500">
                                 <div
-                                    className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
+                                    className="image flex items-center justify-center rounded-md bg-background-light p-3 transition">
                                     <MdOutlineAlternateEmail size={24}/>
                                 </div>
                                 <div className="flex flex-col">
@@ -43,7 +43,7 @@ export function About() {
                                 rel="noreferrer"
                                 className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500"
                             >
-                                <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
+                                <div className="image flex items-center justify-center rounded-md bg-background-light p-3 transition">
                                     <FiGithub size={24}/>
                                 </div>
                                 <div className="flex flex-col">
@@ -60,7 +60,7 @@ export function About() {
                                 className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500"
                                 rel="noreferrer"
                             >
-                                <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
+                                <div className="image flex items-center justify-center rounded-md bg-background-light p-3 transition">
                                     <CiLinkedin size={24} />
                                 </div>
                                 <div className="flex flex-col">
@@ -77,7 +77,7 @@ export function About() {
                                 className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500"
                                 rel="noreferrer"
                             >
-                                <div className="image flex items-center justify-center rounded-md bg-[#141f35] p-3 transition">
+                                <div className="image flex items-center justify-center rounded-md bg-background-light p-3 transition">
                                     <FaInstagram size={24}/>
                                 </div>
                                 <div className="flex flex-col">
