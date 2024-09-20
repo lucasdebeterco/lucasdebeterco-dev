@@ -40,26 +40,20 @@ export function Experience() {
                         </AccordionTrigger>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                When I was hired from my internship, I kept taking on new responsibilities, working with
-                                new technologies and even mentoring new people on the team. During this period, the
-                                company began a technology update process, where I had contact and specialized myself in
-                                React.js, Next.js, Typescript, RESTful APIs, React Query and others modern concepts of
-                                the Front-end ecosystem.
+                                After my internship, I took on new responsibilities, adopted new technologies, and mentored new team members. During this time, the company began a technology update process, during which I specialized in ReactJS, TypeScript, RESTful APIs, React Query, and other modern front-end concepts.
                             </p>
-
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
-                                <li>Build and architect Front-end projects from scratch using React.js and Typescript.</li>
+                                <li>Built and architected front-end projects from scratch using ReactJS and TypeScript.</li>
                                 <li>Breaking down monolithic architectures into agile and manageable components using micro-frontends.</li>
                                 <li>CI/CD practices using AWS Amplify.</li>
                                 <li>Help other developers with pair programming and code reviews.</li>
-                                <li>Responsible for mentoring new developers on the team.</li>
-                                <li>Communication with other teams, such as QA and Back-end to create APIs from scratch.</li>
-                                <li>Knowledge in web concepts such as SSR, SPA, SSG and SEO.</li>
-                                <li>Use of state management tools and techniques.</li>
-                                <li>Design System development (Storybook).</li>
-                                <li>Cypress (E2E Testing).</li>
-                                <li>Scrum Methodology.</li>
-                                <li>Git Flow</li>
+                                <li>Mentored new developers on the team.</li>
+                                <li>Collaborated with other teams, including QA and back-end, to create APIs from scratch.</li>
+                                <li>Gained knowledge of web concepts such as SSR, SPA, SSG, and SEO.</li>
+                                <li>Used state management tools and techniques.</li>
+                                <li>Developed a design system using Storybook.</li>
+                                <li>Performed E2E testing using Cypress.</li>
+                                <li>Followed Scrum methodology and Git Flow.</li>
                             </ul>
                         </AccordionContent>
                     </AccordionItem>
@@ -76,17 +70,15 @@ export function Experience() {
                         </AccordionTrigger>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                I was responsible for maintaining the E-Commerce platform and client websites. Over
-                                time, I gained new responsibilities, such as developing new interfaces, got involved in
-                                large projects and created templates for clients from scratch.
+                                During my internship, I was responsible for maintaining the e-commerce platform and client websites. Over time, I gained additional responsibilities, such as developing new interfaces, getting involved in large projects, and creating templates for clients from scratch.
                             </p>
 
-                            <ul className="ml-8 flex list-disc flex-col gap-3 text-slate-300">
-                                <li>Development of complete site templates for new customers.</li>
-                                <li>SEO techniques and strategies.</li>
-                                <li>Application HTML, CSS and Javascript/JQuery concepts.</li>
-                                <li>Template management using Twig.</li>
-                                <li>Back-end maintenance and contact with PostgreSQL database.</li>
+                            <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
+                                <li>Developed complete site templates for new customers.</li>
+                                <li>Applied SEO techniques and strategies.</li>
+                                <li>Utilized HTML, CSS, and JavaScript/jQuery concepts.</li>
+                                <li>Managed templates using Twig.</li>
+                                <li>Maintained back-end functionality and worked with PostgreSQL databases.</li>
                             </ul>
                         </AccordionContent>
                     </AccordionItem>
