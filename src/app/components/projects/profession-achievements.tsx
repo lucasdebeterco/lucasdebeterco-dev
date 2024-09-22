@@ -1,3 +1,8 @@
+import 'swiper/css'
+import 'swiper/css/navigation'
+
+import React from 'react'
+
 import { professionalAchievements } from '@/app/components/projects/data/professional-achievements'
 import { ProjectItem } from '@/app/components/projects/project-item'
 
@@ -11,16 +16,7 @@ export function ProfessionalAchievements() {
 
             <div className="grid grid-cols-3 gap-4">
                 {professionalAchievements.map((item, index) => (
-                    <ProjectItem
-                        id={index}
-                        title={item.title}
-                        description={item.description}
-                        imageSrc={item.imageSrc[0]}
-                        imageAlt={`${item.title} Project`}
-                        githubLink={item.githubLink}
-                        productionLink={item.productionLink}
-                        tools={item.tools}
-                    />
+                    <ProjectItem id={index} item={item} />
                 ))}
             </div>
         </section>
