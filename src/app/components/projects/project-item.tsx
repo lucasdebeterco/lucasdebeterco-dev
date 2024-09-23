@@ -70,11 +70,11 @@ export function ProjectItem({id, item}: ProjectItemProps) {
 
                         <div className="flex flex-col gap-4 text-left">
                             <h3 className="text-xl font-bold transition">{item.title}</h3>
-                            <p className="line-clamp-4 text-sm">
+                            <p className="line-clamp-4 h-[104px] text-sm">
                                 {item.description}
                             </p>
                             {item.tools && (
-                                <div className="flex flex-wrap gap-3 text-xs text-slate-400">
+                                <div className="flex h-[44px] flex-wrap gap-3 text-xs text-slate-400">
                                     {item.tools.map(tool => <span>{tool}</span>)}
                                 </div>
                             )}
