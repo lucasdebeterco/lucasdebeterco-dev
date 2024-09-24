@@ -37,6 +37,23 @@ export const personalProjects: CardItemProps[] = [
         ]
     },
     {
+        title: 'Buscapeca (Final Paper)',
+        description: '',
+        imageSrc: [
+            '/personal-projects/buscapeca/home.png',
+            '/personal-projects/buscapeca/products.png'
+        ],
+        githubLink: 'https://github.com/lucasdebeterco/buscapeca',
+        productionLink: 'https://buscapecas.vercel.app',
+        tools: [
+            'Next.js',
+            'Web-scrapping',
+            'Tailwind',
+            'Selenium',
+            'EC2'
+        ]
+    },
+    {
         title: 'Coffee Delivery',
         description: 'Application to manage a fictional coffee shop, where I was able to apply the concepts of Context-API to store items in the cart, routing with React router dom and searching for the user location through a third-party API. Developed using React.js, Typescript and Styled Components.',
         imageSrc: [
