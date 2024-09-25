@@ -2,22 +2,22 @@ import Image from 'next/image'
 
 export function Presentation() {
     return (
-        <section id="presentation-section" className="flex h-[85vh] items-center justify-between gap-8">
+        <section id="presentation-section" className="flex h-[85vh] flex-col items-center justify-between gap-8 sm:flex-row">
             <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-2 font-bold">
-                    <span id="presentation-span" className="text-xl font-bold text-indigo-500">Hi, my name is</span>
+                    <span id="presentation-span" className="text-base font-bold text-indigo-500 sm:text-xl">Hi, my name is</span>
                     <h1 id="presentation-name"
-                        className="relative mb-3 w-max text-6xl before:absolute before:bottom-1 before:left-[-4px] before:z-[-1] before:h-3 before:w-full before:-skew-x-[34deg] before:bg-gradient-to-r before:from-indigo-600 before:to-purple-800">
+                        className="relative mb-3 w-max text-3xl before:absolute before:bottom-1 before:left-[-4px] before:z-[-1] before:h-3 before:w-full before:-skew-x-[34deg] before:bg-gradient-to-r before:from-indigo-600 before:to-purple-800 sm:text-6xl">
                         Lucas Debeterco.
                     </h1>
-                    <h2 className="text-3xl" id="presentation-title">
-                        A <strong className="bg-gradient-to-r from-indigo-500 to-purple-700 bg-clip-text text-4xl font-extrabold text-transparent">
+                    <h2 className="text-xl sm:text-3xl" id="presentation-title">
+                        A <strong className="bg-gradient-to-r from-indigo-500 to-purple-700 bg-clip-text text-xl font-extrabold text-transparent sm:text-4xl">
                             Front-end developer
                         </strong> creating web solutions for modern challanges.
                     </h2>
                 </div>
                 
-                <span id="presentation-subtitle" className="max-w-[60%] text-zinc-400">
+                <span id="presentation-subtitle" className="text-zinc-400 sm:max-w-[60%]">
                     I’m a front-end software engineer specialized in building accessible products using the <span className="font-bold">Javascript ecosystem</span> with React, Next.js and Tailwind.
                 </span>
 
@@ -109,7 +109,7 @@ export function Presentation() {
                     width={490}
                     height={490}
                     quality={100}
-                    className="max-w-[490px] rounded-full"
+                    className="rounded-full sm:max-w-[490px]"
                     draggable={false}
                 />
             </div>

@@ -22,7 +22,7 @@ export function About() {
                     </div>
                     <div className="flex flex-col gap-4">
                         <h3 className="font-bold">Get In Touch!</h3>
-                        <div className="flex justify-between">
+                        <div className="flex flex-col justify-between sm:flex-row">
                             <Link href="mailto:lucasdebeterco@gmail.com"
                                 className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500">
                                 <div
