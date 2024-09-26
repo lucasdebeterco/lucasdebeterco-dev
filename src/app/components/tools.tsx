@@ -15,7 +15,7 @@ export function Tools() {
                 Tools
             </h2>
 
-            <ul className="[&>li]: grid gap-3 text-sm sm:grid-cols-4 [&>li>span]:text-indigo-200 [&>li]:flex [&>li]:items-center [&>li]:gap-3 [&>li]:whitespace-nowrap [&>li]:rounded-md [&>li]:bg-background-light [&>li]:p-3">
+            <ul className="[&>li]: grid gap-3 text-sm sm:grid-cols-4 sm:px-8 [&>li>span]:text-indigo-200 [&>li]:flex [&>li]:items-center [&>li]:gap-3 [&>li]:whitespace-nowrap [&>li]:rounded-md [&>li]:bg-background-light [&>li]:p-3">
                 <li>
                     <div className="rounded-md bg-indigo-600 p-2">
                         <FaReact size={26}/>

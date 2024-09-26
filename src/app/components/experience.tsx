@@ -15,8 +15,8 @@ export function Experience() {
                 Experience
             </h2>
 
-            <div id="experience-section-content" className="flex gap-4 px-8">
-                <div className="flex w-[188px] flex-col items-center justify-between gap-2 py-6 text-sm">
+            <div id="experience-section-content" className="flex gap-4 sm:px-8">
+                <div className="hidden w-[188px] flex-col items-center justify-between gap-2 py-6 text-sm sm:visible sm:flex">
                     <div className="mt-3 flex flex-col text-slate-400">
                         <span>MAR 2021 - PRESENT</span>
                     </div>

@@ -87,8 +87,8 @@ export function ProjectItem({id, item}: ProjectItemProps) {
                 <Dialog.Content
                     className="data-[state=open]:animate-contentShow fixed left-[50%] top-[calc(50%+44px)] max-h-[60vh] w-[80vw] translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-lg bg-background-light shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
                     <div className="flex justify-end">
-                        <div className="flex gap-4">
-                            <div className="w-[50vw] overflow-hidden">
+                        <div className="flex flex-col gap-4 sm:flex-row">
+                            <div className="w-[100vh] overflow-hidden sm:w-[50vw]">
                                 <Swiper
                                     modules={[Navigation]}
                                     spaceBetween={50}
@@ -99,7 +99,7 @@ export function ProjectItem({id, item}: ProjectItemProps) {
                                         <SwiperSlide>
                                             <Image
                                                 src={src}
-                                                className="ease h-[480px] w-full object-cover transition duration-300"
+                                                className="ease w-full object-cover transition duration-300 sm:h-[480px]"
                                                 alt={item.title}
                                                 width={675}
                                                 height={480}
