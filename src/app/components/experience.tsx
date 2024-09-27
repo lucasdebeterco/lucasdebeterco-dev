@@ -40,7 +40,7 @@ export function Experience() {
                         </AccordionTrigger>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                After my internship, I took on new responsibilities, adopted new technologies, and mentored new team members. During this time, the company began a technology update process, during which I specialized in ReactJS, TypeScript, RESTful APIs, React Query, and other modern front-end concepts.
+                                After my internship, I took on new responsibilities, adopted new technologies, and mentored new team members. During this period, the company began a technology update process, in which I specialized in ReactJS, TypeScript, RESTful APIs, React Query, and other modern front-end concepts.
                             </p>
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
                                 <li>Built and architected front-end projects from scratch using ReactJS and TypeScript.</li>
