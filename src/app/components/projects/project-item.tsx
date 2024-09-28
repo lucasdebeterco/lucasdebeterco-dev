@@ -85,10 +85,10 @@ export function ProjectItem({id, item}: ProjectItemProps) {
             <Dialog.Portal>
                 <Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 bg-background/80"/>
                 <Dialog.Content
-                    className="data-[state=open]:animate-contentShow fixed left-[50%] top-[calc(50%+44px)] max-h-[60vh] w-[80vw] translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-lg bg-background-light shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
-                    <div className="flex justify-end">
-                        <div className="flex flex-col gap-4 sm:flex-row">
-                            <div className="w-[100vh] overflow-hidden sm:w-[50vw]">
+                    className="data-[state=open]:animate-contentShow fixed left-[50%] top-[calc(50%+44px)]  max-h-[78vh] w-[80vw] translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-lg bg-background-light shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none md:max-h-[60vh]">
+                    <div className="flex w-full justify-end">
+                        <div className="flex w-full flex-col gap-4 md:flex-row">
+                            <div className="w-full overflow-hidden md:w-[50vw]">
                                 <Swiper
                                     modules={[Navigation]}
                                     spaceBetween={50}
@@ -99,7 +99,7 @@ export function ProjectItem({id, item}: ProjectItemProps) {
                                         <SwiperSlide>
                                             <Image
                                                 src={src}
-                                                className="ease w-full object-cover transition duration-300 sm:h-[480px]"
+                                                className="ease h-[200px] object-cover transition duration-300 md:h-[480px]"
                                                 alt={item.title}
                                                 width={675}
                                                 height={480}
@@ -109,10 +109,10 @@ export function ProjectItem({id, item}: ProjectItemProps) {
                                     ))}
                                 </Swiper>
                             </div>
-                            <div className="flex max-w-[40vw] flex-col justify-between gap-3 p-[25px]">
+                            <div className="flex max-w-full flex-col justify-between gap-3 p-[25px] md:max-w-[40vw]">
                                 <div className="flex flex-col gap-3">
                                     <h3 className="text-2xl font-bold transition">{item.title}</h3>
-                                    <p className="text-sm">
+                                    <p className="scroll max-h-[200px] overflow-y-auto pr-2 text-justify text-sm md:max-h-max md:pr-0">
                                         {item.description}
                                     </p>
                                 </div>
@@ -124,7 +124,7 @@ export function ProjectItem({id, item}: ProjectItemProps) {
                     </div>
                     <Dialog.Close asChild>
                         <button
-                            className="text-violet11 hover:bg-violet4 focus:shadow-violet7 absolute right-4 top-4 inline-flex appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
+                            className="absolute right-4 top-4 z-10 inline-flex appearance-none items-center justify-center rounded-full bg-background-light focus:shadow-[0_0_0_2px] focus:outline-none"
                             aria-label="Close"
                         >
                             <IoMdCloseCircle size={30} />

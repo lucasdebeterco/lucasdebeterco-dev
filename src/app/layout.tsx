@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className="scroll">
             <body className={fira_code.className}>{children}</body>
         </html>
     )

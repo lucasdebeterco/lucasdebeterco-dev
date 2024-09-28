@@ -15,8 +15,8 @@ export function Experience() {
                 Experience
             </h2>
 
-            <div id="experience-section-content" className="flex gap-4 sm:px-8">
-                <div className="hidden w-[188px] flex-col items-center justify-between gap-2 py-6 text-sm sm:visible sm:flex">
+            <div id="experience-section-content" className="flex gap-4 md:px-8">
+                <div className="hidden w-[188px] flex-col items-center justify-between gap-2 py-6 text-sm md:visible md:flex">
                     <div className="mt-3 flex flex-col text-slate-400">
                         <span>MAR 2021 - PRESENT</span>
                     </div>
@@ -30,7 +30,7 @@ export function Experience() {
                     <AccordionItem value="item-1 flex">
                         <AccordionTrigger className="w-full">
                             <div className="flex flex-col gap-1">
-                                <h3 className="text-lg font-bold transition">
+                                <h3 className="text-left text-lg font-bold transition">
                                     Front-End Developer
                                 </h3>
                                 <span className="flex gap-2 text-sm">
@@ -60,7 +60,7 @@ export function Experience() {
                     <AccordionItem value="item-2">
                         <AccordionTrigger className="w-full">
                             <div className="flex flex-col gap-1">
-                                <h3 className="text-lg font-bold transition">
+                                <h3 className="text-left text-lg font-bold transition">
                                     Front-End Developer (Internship)
                                 </h3>
                                 <span className="flex gap-2 text-sm">

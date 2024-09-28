@@ -26,5 +26,11 @@ export const elementsToReveal = [
     { selector: '#project-card-7', delay: 800 },
     { selector: '#project-card-8', delay: 900 },
     { selector: '#project-card-9', delay: 1000 },
-    { selector: '#project-card-10', delay: 1100 }
+    { selector: '#project-card-10', delay: 1100 },
+    { selector: '#project-card-11', delay: 1200 },
+    { selector: '#project-card-12', delay: 1300 },
+    { selector: '#project-card-13', delay: 1400 },
+    { selector: '#project-card-14', delay: 1500 },
+    { selector: '#project-card-15', delay: 1600 },
+    { selector: '#project-card-16', delay: 1700 },
 ]

@@ -12,17 +12,17 @@ export function About() {
                 About
             </h2>
 
-            <div className="flex items-center justify-between gap-24 sm:px-8">
+            <div className="flex items-center justify-between gap-24 md:px-8">
                 <div id="about-section-content" className="flex flex-col gap-12">
                     <div className="flex flex-col gap-4">
                         <h3 className="font-bold">Who am I?</h3>
-                        <p className=" text-sm text-zinc-400 [&>b]:text-zinc-100">
+                        <p className="text-justify text-sm text-zinc-400 [&>b]:text-zinc-100">
                             I am a developer graduated in Information Systems (Bachelor´s degree) and professional experience in the Front-end development area. I participated in projects with thousands of daily access and also <b>developing applications from scratch to publication</b>, with the objective of achieve the demands of various consumers and retailers in the E-commerce market. I have <b>4 years of professional experience with React.js, Typescript and Twig</b> and great teamwork skills, being responsible for <b>mentoring new people in my Squad</b> multiple times.
                         </p>
                     </div>
                     <div className="flex flex-col gap-4">
                         <h3 className="font-bold">Get In Touch!</h3>
-                        <div className="flex flex-col justify-between gap-4 sm:flex-row">
+                        <div className="flex flex-col justify-between gap-4 md:flex-row">
                             <Link href="mailto:lucasdebeterco@gmail.com"
                                 className="flex items-center gap-3 [&:hover>.image]:bg-indigo-600 [&:hover_.text]:text-indigo-500">
                                 <div

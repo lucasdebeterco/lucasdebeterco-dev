@@ -11,7 +11,7 @@ export function PersonalProjects() {
                 Personal Projects
             </h2>
 
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-3">
                 {personalProjects.map((item, index) => (
                     <ProjectItem id={index} item={item} />
                 ))}

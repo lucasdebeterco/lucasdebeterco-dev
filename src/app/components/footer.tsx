@@ -6,7 +6,7 @@ import { TbBrandLinkedin } from 'react-icons/tb'
 
 export function Footer() {
     return (
-        <footer className="mx-auto mt-20 flex items-center justify-between bg-background-light px-20 py-14 text-sm shadow-overlay">
+        <footer className="md:px:20 mx-auto mt-20 flex flex-col items-center justify-between gap-6 bg-background-light px-8 py-14 text-center text-sm shadow-overlay md:flex-row md:text-left">
             <div className="flex flex-col">
                 <span className="text-lg">Developed by <strong className="text-violet-500">Lucas Debeterco</strong> in 2024</span>
                 <span>Built with Next.js and Tailwind CSS, deployed with Vercel.</span>

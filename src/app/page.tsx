@@ -34,7 +34,7 @@ export default function Home() {
         <>
             <Header />
 
-            <div className="mx-auto flex max-w-[1360px] flex-col gap-28 px-4 pt-28 sm:px-10">
+            <div className="mx-auto flex max-w-[1360px] flex-col gap-28 px-4 pt-28 md:px-10">
                 <Presentation />
                 <About />
                 <Tools />
