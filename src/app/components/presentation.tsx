@@ -15,7 +15,7 @@ export function Presentation() {
                         A <strong
                             className="bg-gradient-to-r from-indigo-500 to-purple-700 bg-clip-text text-xl font-extrabold text-transparent md:text-4xl">
                         Front-end developer
-                        </strong> creating web solutions for modern challanges.
+                        </strong> creating web solutions for modern challenges.
                     </h2>
                 </div>
                 
