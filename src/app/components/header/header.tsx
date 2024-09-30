@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import { X } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -83,32 +84,38 @@ export function Header() {
                     </Link>
                 </nav>
             </div>
-            {isMenuOpen && (
-                <div className="absolute left-[16px] top-[102px] mx-auto flex w-[calc(100%-32px)] flex-col items-center gap-6 rounded-md bg-background-light p-3 transition">
-                    {navItems.map((item, index) => (
-                        <div
-                            id={item.id}
-                            onClick={() => setIsMenuOpen(false)}
-                            className="w-full [&>a]:block [&>a]:w-full"
-                            key={item.id}
-                        >
-                            <HeaderLink sectionId={item.sectionId}>
-                                <span className="mr-1 text-indigo-500">{index + 1}.</span>
-                                {item.description}
-                            </HeaderLink>
-                        </div>
-                    ))}
-                    <Link
-                        id="download-cv-btn"
-                        className="w-full rounded-md bg-indigo-600 px-4 py-2"
-                        href="https://drive.google.com/file/d/10SMFPhlyN1dCCzWB00FXYRQ8U0WZJPC0/view?usp=sharing"
-                        target="_blank"
+            <AnimatePresence>
+                {isMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="absolute left-[16px] top-[102px] mx-auto flex w-[calc(100%-32px)] flex-col items-center gap-6 rounded-md bg-background-light p-3 transition"
                     >
+                        {navItems.map((item, index) => (
+                            <div
+                                id={item.id}
+                                onClick={() => setIsMenuOpen(false)}
+                                className="w-full [&>a]:block [&>a]:w-full"
+                                key={item.id}
+                            >
+                                <HeaderLink sectionId={item.sectionId}>
+                                    <span className="mr-1 text-indigo-500">{index + 1}.</span>
+                                    {item.description}
+                                </HeaderLink>
+                            </div>
+                        ))}
+                        <Link
+                            id="download-cv-btn"
+                            className="w-full rounded-md bg-indigo-600 px-4 py-2"
+                            href="https://drive.google.com/file/d/10SMFPhlyN1dCCzWB00FXYRQ8U0WZJPC0/view?usp=sharing"
+                            target="_blank"
+                        >
                             Download CV
-                    </Link>
-                </div>
-            )}
-
+                        </Link>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </header>
     )
 }
