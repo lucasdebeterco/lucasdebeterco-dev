@@ -40,10 +40,11 @@ export function Experience() {
                         </AccordionTrigger>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                After my internship, I took on new responsibilities, adopted new technologies, and mentored new team members. During this period, the company began a technology update process, in which I specialized in ReactJS, TypeScript, RESTful APIs, React Query, and other modern front-end concepts.
+                                After my period as a trainee, I took on new responsibilities, adopted new technologies, and mentored new team members. During this period, the company began a technology update process, in which I specialized in ReactJS, TypeScript, RESTful APIs, React Query, and other modern front-end concepts.
                             </p>
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
-                                <li>Built and architected front-end projects from scratch using ReactJS and TypeScript.</li>
+                                <li>Built and architected front-end projects from scratch using React.js and TypeScript.</li>
+                                <li>Built and architected Next.js front-end projects from scratch.</li>
                                 <li>Breaking down monolithic architectures into agile and manageable components using micro-frontends.</li>
                                 <li>CI/CD practices using AWS Amplify.</li>
                                 <li>Help other developers with pair programming and code reviews.</li>
@@ -61,7 +62,7 @@ export function Experience() {
                         <AccordionTrigger className="w-full">
                             <div className="flex flex-col gap-1">
                                 <h3 className="text-left text-lg font-bold transition">
-                                    Front-End Developer (Internship)
+                                    Front-End Developer Trainee
                                 </h3>
                                 <span className="flex gap-2 text-sm">
                                     Magazord Tecnologia <Image src="/experience/magazord-logo.svg" alt="Logo Magazord" width={16} height={18}/>
@@ -70,7 +71,7 @@ export function Experience() {
                         </AccordionTrigger>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                During my internship, I was responsible for maintaining the e-commerce platform and client websites. Over time, I gained additional responsibilities, such as developing new interfaces, getting involved in large projects, and creating templates for clients from scratch.
+                                During my period as a trainee, I was responsible for maintaining the e-commerce platform and client websites. Over time, I gained additional responsibilities, such as developing new interfaces, getting involved in large projects, and creating templates for clients from scratch.
                             </p>
 
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
