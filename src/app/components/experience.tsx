@@ -18,7 +18,7 @@ export function Experience() {
             <div id="experience-section-content" className="flex gap-4 md:px-8">
                 <div className="hidden w-[188px] flex-col items-center justify-between gap-2 py-6 text-sm md:visible md:flex">
                     <div className="mt-3 flex flex-col text-slate-400">
-                        <span>MAR 2021 - PRESENT</span>
+                        <span>APR 2020 - PRESENT</span>
                     </div>
 
                 </div>
@@ -37,8 +37,7 @@ export function Experience() {
                         </AccordionTrigger>
                         <AccordionContent>
                             <p className="text-slate-300">
-                                After my period as a trainee, I took on new responsibilities, adopted new technologies, and mentored new team members. During this period, the company began a technology update process, in which I specialized in ReactJS, TypeScript, RESTful APIs, React Query, and other modern front-end concepts.
-                            </p>
+                                Responsible for maintaining the e-commerce platform and client websites. Over time, I gained additional responsibilities, adopted new technologies, and mentored new team members. During this period, the company began a technology update process, in which I specialized in React.js, TypeScript, Next.js, RESTful APIs, React Query, and other modern front-end tools.                            </p>
                             <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
                                 <li>Built and architected front-end projects from scratch using React.js and TypeScript.</li>
                                 <li>Built and architected Next.js front-end projects from scratch.</li>
