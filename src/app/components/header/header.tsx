@@ -77,7 +77,7 @@ export function Header() {
                     <Link
                         id="download-cv-btn"
                         className="rounded-md bg-indigo-600 px-4 py-2"
-                        href="https://drive.google.com/file/d/10SMFPhlyN1dCCzWB00FXYRQ8U0WZJPC0/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1-0eui9eUXwEtkZadlcD1P-1tfQsdXLrd/view?usp=sharing"
                         target="_blank"
                     >
                         Download CV
@@ -108,7 +108,7 @@ export function Header() {
                         <Link
                             id="download-cv-btn"
                             className="w-full rounded-md bg-indigo-600 px-4 py-2"
-                            href="https://drive.google.com/file/d/10SMFPhlyN1dCCzWB00FXYRQ8U0WZJPC0/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1-0eui9eUXwEtkZadlcD1P-1tfQsdXLrd/view?usp=sharing"
                             target="_blank"
                         >
                             Download CV
