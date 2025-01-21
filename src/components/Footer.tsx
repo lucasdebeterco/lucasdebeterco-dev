@@ -97,9 +97,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700 text-center">
           <p className="text-slate-600 dark:text-slate-400 flex items-center justify-center">
-            © {currentYear} Lucas Debeterco. All rights reserved. Made with 
-            <Heart size={16} className="mx-1 text-red-500" fill="currentColor" /> 
-            and React.
+            © {currentYear} Lucas Debeterco. All rights reserved.
           </p>
         </div>
       </div>
