@@ -20,10 +20,7 @@ export function Experience() {
                     <div className="mt-3 flex flex-col text-slate-400">
                         <span>MAR 2021 - PRESENT</span>
                     </div>
-                    <div className="relative h-full w-[3px] bg-indigo-900 before:absolute before:left-[-4px] before:size-[10px] before:rounded-full before:bg-indigo-700 after:absolute after:bottom-0 after:left-[-4px] after:size-[10px] after:rounded-full after:bg-indigo-700"></div>
-                    <div className="mt-3 flex flex-col text-slate-400">
-                        <span>APR 2020 - MAR 2021</span>
-                    </div>
+
                 </div>
 
                 <Accordion type="multiple" className="flex w-full flex-col gap-5 text-sm [&>div:hover]:bg-background-light [&>div:hover]:drop-shadow-sm [&>div:hover_h3]:text-indigo-500 [&>div]:rounded-lg [&>div]:px-5 [&>div]:transition">
@@ -58,32 +55,8 @@ export function Experience() {
                             </ul>
                         </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-2">
-                        <AccordionTrigger className="w-full">
-                            <div className="flex flex-col gap-1">
-                                <h3 className="text-left text-lg font-bold transition">
-                                    Front-End Developer Trainee
-                                </h3>
-                                <span className="flex gap-2 text-sm">
-                                    Magazord Tecnologia <Image src="/experience/magazord-logo.svg" alt="Logo Magazord" width={16} height={18}/>
-                                </span>
-                            </div>
-                        </AccordionTrigger>
-                        <AccordionContent>
-                            <p className="text-slate-300">
-                                During my period as a trainee, I was responsible for maintaining the e-commerce platform and client websites. Over time, I gained additional responsibilities, such as developing new interfaces, getting involved in large projects, and creating templates for clients from scratch.
-                            </p>
-
-                            <ul className="ml-8 mt-5 flex list-disc flex-col gap-3 text-slate-300">
-                                <li>Developed complete site templates for new customers.</li>
-                                <li>Applied SEO techniques and strategies.</li>
-                                <li>Utilized HTML, CSS, and JavaScript/jQuery concepts.</li>
-                                <li>Managed templates using Twig.</li>
-                                <li>Maintained back-end functionality and worked with PostgreSQL databases.</li>
-                            </ul>
-                        </AccordionContent>
-                    </AccordionItem>
                 </Accordion>
             </div>
-        </section>)
+        </section>
+    )
 }
