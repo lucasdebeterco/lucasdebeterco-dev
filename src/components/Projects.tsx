@@ -14,7 +14,7 @@ const Projects = () => {
         <section id="projects" className="scroll-mt-16 py-16">
             <div className="mx-auto max-w-7xl">
                 <h2 className="mb-8 text-center text-3xl font-bold">
-          Featured <span className="text-indigo-600 dark:text-indigo-400">Projects</span>
+                    Featured <span className="text-indigo-600 dark:text-indigo-400">Projects</span>
                 </h2>
         
                 <div className="mb-8 flex justify-center">
@@ -27,7 +27,7 @@ const Projects = () => {
                                     : 'text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400'
                             }`}
                         >
-              All
+                            All
                         </button>
                         <button
                             onClick={() => setFilter('professional')}
@@ -37,7 +37,7 @@ const Projects = () => {
                                     : 'text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400'
                             }`}
                         >
-              Professional projects
+                            Professional projects
                         </button>
 
                         <button
@@ -48,7 +48,7 @@ const Projects = () => {
                                     : 'text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400'
                             }`}
                         >
-              Personal projects
+                            Personal projects
                         </button>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const Projects = () => {
                                             rel="noopener noreferrer"
                                             className="flex items-center font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
                                         >
-                      Live Demo
+                                            Live Demo
                                             <ExternalLink size={16} className="ml-1" />
                                         </a>
                                     )}
@@ -101,7 +101,7 @@ const Projects = () => {
                                             rel="noopener noreferrer"
                                             className="flex items-center font-medium text-slate-700 hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400"
                                         >
-                      Code
+                                            Code
                                             <Github size={16} className="ml-1" />
                                         </a>
                                     )}

@@ -6,7 +6,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     useEffect(() => {
-    // Check for user preference
+        // Check for user preference
         const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
         const savedTheme = localStorage.getItem('theme')
     
@@ -45,7 +45,7 @@ const Header = () => {
                 <div className="flex h-16 items-center justify-between">
                     <div className="shrink-0">
                         <a href="#" className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
-              Lucas<span className="text-slate-900 dark:text-white">_Debeterco</span>
+                            Lucas<span className="text-slate-900 dark:text-white">_Debeterco</span>
                         </a>
                     </div>
           
@@ -65,7 +65,7 @@ const Header = () => {
                             target="_blank"
                             className={`rounded-md bg-indigo-600  px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 hover:text-indigo-600 dark:text-white dark:hover:text-slate-200`} rel="noreferrer"
                         >
-              Download CV
+                            Download CV
                         </a>
                     </nav>
           
@@ -110,7 +110,7 @@ const Header = () => {
                             target="_blank"
                             className={`block rounded-md bg-indigo-600 px-3  py-2 text-center text-sm font-medium text-white transition-colors hover:bg-indigo-700 hover:text-indigo-600 dark:text-white dark:hover:text-slate-200`} rel="noreferrer"
                         >
-              Download CV
+                            Download CV
                         </a>
                     </div>
                 </div>

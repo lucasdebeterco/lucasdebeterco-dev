@@ -43,7 +43,7 @@ const Experience = () => {
         <section id="experience" className="scroll-mt-16 py-16">
             <div className="mx-auto max-w-7xl">
                 <h2 className="mb-8 text-center text-3xl font-bold">
-          Work <span className="text-indigo-600 dark:text-indigo-400">Experience</span>
+                    Work <span className="text-indigo-600 dark:text-indigo-400">Experience</span>
                 </h2>
         
                 <div className="relative ml-6 space-y-10 border-l-2 border-indigo-200 pl-6 dark:border-indigo-800">
@@ -52,7 +52,6 @@ const Experience = () => {
                             key={index} 
                             className="relative rounded-xl bg-white p-6 shadow-md dark:bg-slate-800"
                         >
-                            {/* Timeline dot */}
                             <div className="absolute -left-[30px] top-6 size-4 rounded-full border-4 border-white bg-indigo-600 dark:border-slate-900 dark:bg-indigo-400"></div>
               
                             <div className="mb-4 flex flex-col justify-between md:flex-row md:items-center">
