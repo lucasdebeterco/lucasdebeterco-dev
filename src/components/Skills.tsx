@@ -11,7 +11,7 @@ const Skills = () => {
                 <ul className="[&>li]: grid gap-3 text-sm md:grid-cols-4 [&>li>span]:text-indigo-200 [&>li]:flex [&>li]:items-center [&>li]:gap-3 [&>li]:whitespace-nowrap [&>li]:rounded-md [&>li]:bg-white [&>li]:p-3 [&>li]:dark:bg-slate-800">
                     {skills.map(item => (
                         <li>
-                            <div className="rounded-md bg-indigo-600 p-2">
+                            <div className="rounded-md bg-indigo-600 p-2 text-white">
                                 {item.icon}
                             </div>
                             {item.skill}
