@@ -25,18 +25,6 @@ const About = () => {
                     <div className="rounded-xl bg-white p-6 shadow-md dark:bg-slate-800">
                         <div className="mb-4 flex items-center">
                             <div className="mr-4 rounded-lg bg-indigo-100 p-2 dark:bg-indigo-900/50">
-                                <Code className="text-indigo-600 dark:text-indigo-400" size={24} />
-                            </div>
-                            <h3 className="text-xl font-semibold">Development Philosophy</h3>
-                        </div>
-                        <p className="text-slate-700 dark:text-slate-300">
-                            I believe in writing clean, maintainable code that solves real problems for users and continuously learning through online courses and technical books.
-                        </p>
-                    </div>
-          
-                    <div className="rounded-xl bg-white p-6 shadow-md dark:bg-slate-800">
-                        <div className="mb-4 flex items-center">
-                            <div className="mr-4 rounded-lg bg-indigo-100 p-2 dark:bg-indigo-900/50">
                                 <Globe className="text-indigo-600 dark:text-indigo-400" size={24} />
                             </div>
                             <h3 className="text-xl font-semibold">Location</h3>
@@ -45,19 +33,7 @@ const About = () => {
                             Based in Rio do Sul, Santa Catarina, Brazil. Available for remote work worldwide.
                         </p>
                     </div>
-          
-                    <div className="rounded-xl bg-white p-6 shadow-md dark:bg-slate-800">
-                        <div className="mb-4 flex items-center">
-                            <div className="mr-4 rounded-lg bg-indigo-100 p-2 dark:bg-indigo-900/50">
-                                <Briefcase className="text-indigo-600 dark:text-indigo-400" size={24} />
-                            </div>
-                            <h3 className="text-xl font-semibold">Current Role</h3>
-                        </div>
-                        <p className="text-slate-700 dark:text-slate-300">
-                            Frontend Developer at Magazord, focusing on building high quality web applications and mentoring junior developers.
-                        </p>
-                    </div>
-          
+
                     <div className="rounded-xl bg-white p-6 shadow-md dark:bg-slate-800">
                         <div className="mb-4 flex items-center">
                             <div className="mr-4 rounded-lg bg-indigo-100 p-2 dark:bg-indigo-900/50">
