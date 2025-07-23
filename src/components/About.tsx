@@ -10,7 +10,7 @@ const About = () => {
         
                 <div className="mb-8 rounded-xl bg-white p-6 shadow-md dark:bg-slate-800">
                     <p className="mb-4 text-slate-700 dark:text-slate-300">
-                        I am a developer with a Bachelor's degree in Information Systems and professional experience in front-end development. I have contributed to <strong>projects with milions of daily users</strong> and have <strong>developed applications from scratch</strong> to meet the needs of various consumers and retailers in the e-commerce market.
+                        I am a developer with a Bachelor's degree in Information Systems and professional experience in front-end development. I have contributed to <strong>projects with millions of daily users</strong> and have developed severeal applications from scratch.
                     </p>
                     <p className="mb-4 text-slate-700 dark:text-slate-300">
                         With over <strong>7 years of professional experience in React.js, TypeScript and Next.js</strong>, I have also demonstrated strong teamwork skills, mentoring new members in my squad multiple times.
