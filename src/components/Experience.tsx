@@ -2,39 +2,39 @@ import { Calendar, MapPin } from 'lucide-react'
 
 const Experience = () => {
     const experiences = [
-    // {
-    //   title: 'Senior Fullstack Developer',
-    //   company: 'WEG',
-    //   location: 'Jaraguá do Sul, SC, Brazil ',
-    //   period: 'Jan 2022 - Present',
-    //   description: [
-    //     'Lead the frontend development of the company\'s flagship product, improving performance by 40%',
-    //     'Implemented a component library used across multiple projects, reducing development time by 30%',
-    //     'Mentored junior developers and conducted code reviews to ensure high code quality',
-    //     'Collaborated with designers and product managers to create intuitive user experiences',
-    //   ],
-    // },
+        {
+            title: 'Senior Software Engineer',
+            company: 'CI&T',
+            companyIcon: <img src="/experience/ci&t-logo.png" alt="Logo CI&T" width={42} height={14} />,
+            location: 'Remote',
+            period: '2025 - Present',
+            description: [
+                'Worked as a Senior Developer and led the architecture of projects using Next.js and React.js.',
+                'Applied front-end architectural best practices.',
+                'Implemented SSO (Single Sign-On) authentication.',
+                'Developed and maintained test automation using Playwright and Jest.',
+                'Collaborated with cross-functional teams to define and integrate new features.',
+                'Performed code reviews, pair programming, and technical guidance to support other developers.',
+            ],
+        }, 
         {
             title: 'Frontend Developer',
             company: 'Magazord Commerce',
-            companyIcon: <img src="/experience/magazord-logo.svg" alt="Logo Magazord" width={14} height={14}/>,
-            location: 'Rio do Sul, SC, Brazil',
-            period: 'Mar 2018 - Present',
-            resume:'Responsible for maintaining the e-commerce platform and client websites. Over time, I gained additional responsibilities, adopted new technologies, and mentored new team members. During this period, the company began a technology update process, in which I specialized in React.js, TypeScript, Next.js, RESTful APIs, React Query, and other modern front-end tools.',
+            companyIcon: <img src="/experience/magazord-logo.svg" alt="Logo Magazord" width={14} height={14} />,
+            location: 'Rio do Sul, SC, Brazil (Hybrid)',
+            period: '2018 - 2025',
             description: [
-                'Built and architected front-end projects from scratch using Next.js, React.js and TypeScript',
-                'Breaking down monolithic architectures into agile and manageable components using micro-frontends',
-                'CI/CD practices using AWS Amplify',
-                'Help other developers with pair programming, code reviews and mentored new developers on the team',
-                'Collaborated with other teams, including QA and back-end, to create APIs from scratch',
-                'Gained knowledge of web concepts such as SSR, SPA, SSG',
-                'Applied SEO techniques and strategies',
-                'Used state management tools and techniques',
-                'Developed a Design System using Storybook',
-                'Performed E2E testing using Cypress',
-                'Followed Scrum methodology and Git Flow',
-                'Developed complete site templates for new customers using Twig',
-                'Basic knowledge in PHP and PostgreSQL'
+                'Contributed to projects with millions of users to meet the needs of consumers/retailers in the e-commerce market.',
+                'Built and architected front-end projects from scratch using Next.js, React.js and TypeScript.',
+                'Breaking down monolithic architectures into agile and manageable components using micro-frontends.',
+                'CI/CD practices using AWS Amplify.',
+                'Helped other developers with pair programming and code reviews, and mentored new developers on the team.',
+                'Collaborated with other teams, including QA and back-end, to create APIs from scratch.',
+                'Gained knowledge of web concepts such as SSR, SPA, and SSG.',
+                'Applied SEO techniques and strategies.',
+                'Developed a Design System using Storybook.',
+                'Performed tests using Cypress and Vitest.',
+                'Followed Scrum methodology and Git Flow.'
             ],
         },
     ]
@@ -60,17 +60,16 @@ const Experience = () => {
                                     <p className="flex gap-2 font-medium text-indigo-600 dark:text-indigo-400">{exp.company}{exp.companyIcon}</p>
                                 </div>
                                 <div className="mt-2 md:mt-0">
-                                    <div className="mb-1 flex items-center text-sm text-slate-600 dark:text-slate-400">
+                                    <div className="mb-1 flex items-center justify-end text-sm text-slate-600 dark:text-slate-400">
                                         <Calendar size={16} className="mr-1" />
                                         {exp.period}
                                     </div>
-                                    <div className="flex items-center text-sm text-slate-600 dark:text-slate-400">
+                                    <div className="flex items-center justify-end text-sm text-slate-600 dark:text-slate-400">
                                         <MapPin size={16} className="mr-1" />
                                         {exp.location}
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-slate-700 dark:text-slate-300">{exp.resume}</p>
                             <ul className="mt-4 space-y-2">
                                 {exp.description.map((item, i) => (
                                     <li key={i} className="flex items-start">
