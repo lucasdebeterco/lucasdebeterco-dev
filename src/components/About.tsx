@@ -13,7 +13,7 @@ const About = () => {
                         I am a developer with a Bachelor's degree in Information Systems and professional experience in front-end development. I have contributed to <strong>projects with millions of daily users</strong> and have developed severeal applications from scratch.
                     </p>
                     <p className="mb-4 text-slate-700 dark:text-slate-300">
-                        With over <strong>7 years of professional experience in React.js, TypeScript and Next.js</strong>, I have also demonstrated strong teamwork skills, mentoring new members in my squad multiple times.
+                        With over <strong>8 years of professional experience in React.js, TypeScript and Next.js</strong>, I have also demonstrated strong teamwork skills, mentoring new members in my squad multiple times.
                     </p>
 
                     <p className="text-slate-700 dark:text-slate-300">
