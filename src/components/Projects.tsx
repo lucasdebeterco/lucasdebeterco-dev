@@ -20,7 +20,7 @@ function formatUpdatedAt(iso: string) {
 const ITEMS_PER_PAGE = 12
 
 const Projects = () => {
-    const [tab, setTab] = useState<Tab>('github')
+    const [tab, setTab] = useState<Tab>('professional')
     const [query, setQuery] = useState('')
     const [sort, setSort] = useState<Sort>('updated')
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE)
@@ -73,16 +73,6 @@ const Projects = () => {
                 <div className="mb-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
                     <div className="inline-flex rounded-xl bg-slate-200/70 p-1 backdrop-blur dark:bg-slate-800/60">
                         <button
-                            onClick={() => setTab('github')}
-                            className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
-                                tab === 'github'
-                                    ? 'bg-white text-indigo-700 shadow-sm dark:bg-slate-900 dark:text-indigo-300'
-                                    : 'text-slate-700 hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-300'
-                            }`}
-                        >
-                            GitHub
-                        </button>
-                        <button
                             onClick={() => setTab('professional')}
                             className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
                                 tab === 'professional'
@@ -91,6 +81,16 @@ const Projects = () => {
                             }`}
                         >
                             Professional Projects
+                        </button>
+                        <button
+                            onClick={() => setTab('github')}
+                            className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+                                tab === 'github'
+                                    ? 'bg-white text-indigo-700 shadow-sm dark:bg-slate-900 dark:text-indigo-300'
+                                    : 'text-slate-700 hover:text-indigo-700 dark:text-slate-300 dark:hover:text-indigo-300'
+                            }`}
+                        >
+                            GitHub
                         </button>
                     </div>
 
