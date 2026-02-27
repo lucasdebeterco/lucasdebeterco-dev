@@ -9,13 +9,21 @@ import Skills from './components/Skills'
 
 function App() {
     return (
-        <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+        <div className="relative min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+            <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+                <div className="absolute inset-0 bg-slate-50 dark:bg-slate-950" />
+                <div className="absolute -top-40 left-1/2 h-80 w-[60rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500/15 via-purple-500/15 to-fuchsia-500/15 blur-3xl" />
+                <div className="absolute -bottom-40 right-0 h-80 w-[40rem] rounded-full bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-fuchsia-500/10 blur-3xl" />
+            </div>
+
             <Header />
       
             <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
                 <section id="hero" className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-12 py-16 md:flex-row md:py-24">
                     <div className="md:w-1/2">
-                        <span className="font-medium text-indigo-600 dark:text-indigo-400">Hello, I'm</span>
+                        <span className="inline-flex items-center rounded-full border border-indigo-200/60 bg-white/60 px-3 py-1 text-sm font-medium text-indigo-700 backdrop-blur dark:border-indigo-900/50 dark:bg-slate-900/40 dark:text-indigo-300">
+                            Hello, I'm
+                        </span>
                         <h1 className="mb-4 mt-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-4xl font-bold text-transparent dark:from-indigo-400 dark:to-purple-400 md:text-5xl lg:text-6xl">
                             Lucas Debeterco
                         </h1>
@@ -29,7 +37,7 @@ function App() {
                         <div className="flex flex-wrap gap-4">
                             <a 
                                 href="mailto:lucasdebeterco@gmail.com"
-                                className="flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 text-white transition-colors hover:bg-indigo-700"
+                                className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 px-5 py-3 text-white shadow-sm transition hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-indigo-500/20 dark:focus:ring-indigo-400/20"
                             >
                                 <Mail size={18} />
                                 Contact Me

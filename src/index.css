@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: theme('colors.indigo.500');
+    color: white;
+}
+
 html * {
     &::-webkit-scrollbar {
         width: 6px;
@@ -23,7 +32,7 @@ html.dark * {
     }
 }
 
-html:not(.light) * {
+html:not(.dark) * {
     &::-webkit-scrollbar-track {
         background: theme('colors.slate.200');
     }

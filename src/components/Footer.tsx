@@ -1,23 +1,23 @@
-import { Github, Linkedin, Mail,Twitter } from 'lucide-react'
+import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
   
     return (
-        <footer id="contact" className="scroll-mt-16 border-t border-slate-200 bg-white py-12 dark:border-slate-700 dark:bg-slate-800">
+        <footer id="contact" className="scroll-mt-16 border-t border-slate-200 bg-white/70 py-12 backdrop-blur dark:border-slate-800 dark:bg-slate-900/50">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
                     <div className="md:col-span-2">
-                        <h3 className="mb-4 text-xl font-bold text-indigo-600 dark:text-indigo-400">
+                        <h3 className="mb-4 text-xl font-bold text-indigo-700 dark:text-indigo-300">
                             Lucas<span className="text-slate-900 dark:text-white">_Debeterco</span>
                         </h3>
                         <p className="mb-4 flex max-w-md flex-col text-slate-600 dark:text-slate-400">
-                            <span className="text-white">Developed by Lucas Debeterco in 2024</span>
-                            Built with Next.js and Tailwind CSS, deployed with Vercel.
+                            <span>Developed by Lucas Debeterco</span>
+                            Built with Vite, React and TailwindCSS.
                         </p>
                         <div className="flex space-x-4">
                             <a 
-                                href="https://github.com" 
+                                href="https://github.com/lucasdebeterco" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
@@ -26,7 +26,7 @@ const Footer = () => {
                                 <Github size={20} />
                             </a>
                             <a 
-                                href="https://linkedin.com" 
+                                href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
@@ -35,16 +35,16 @@ const Footer = () => {
                                 <Linkedin size={20} />
                             </a>
                             <a 
-                                href="https://twitter.com" 
+                                href="https://instagram.com/lucasdebeterco/" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
-                                aria-label="Twitter"
+                                aria-label="Instagram"
                             >
-                                <Twitter size={20} />
+                                <Instagram size={20} />
                             </a>
                             <a 
-                                href="mailto:contact@example.com" 
+                                href="mailto:lucasdebeterco@gmail.com" 
                                 className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
                                 aria-label="Email"
                             >
@@ -86,7 +86,7 @@ const Footer = () => {
                                 Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
                             </p>
                             <a 
-                                href="mailto:contact@example.com" 
+                                href="mailto:lucasdebeterco@gmail.com" 
                                 className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700"
                             >
                                 Get In Touch

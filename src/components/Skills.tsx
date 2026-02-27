@@ -8,10 +8,13 @@ const Skills = () => {
                     My <span className="text-indigo-600 dark:text-indigo-400">Skills</span>
                 </h2>
 
-                <ul className="[&>li]: grid gap-3 text-sm md:grid-cols-4 [&>li>span]:text-indigo-200 [&>li]:flex [&>li]:items-center [&>li]:gap-3 [&>li]:whitespace-nowrap [&>li]:rounded-md [&>li]:bg-white [&>li]:p-3 [&>li]:dark:bg-slate-800">
+                <ul className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {skills.map(item => (
-                        <li>
-                            <div className="rounded-md bg-indigo-600 p-2 text-white">
+                        <li
+                            key={item.skill}
+                            className="flex items-center gap-3 whitespace-nowrap rounded-xl border border-slate-200/60 bg-white/80 p-3 shadow-sm backdrop-blur dark:border-slate-700/60 dark:bg-slate-900/60"
+                        >
+                            <div className="rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 p-2 text-white shadow-sm">
                                 {item.icon}
                             </div>
                             {item.skill}
