@@ -1,104 +1,88 @@
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
+import { Check, Mail } from 'lucide-react'
+import { useState } from 'react'
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
-const Footer = () => {
+interface FooterProps {
+    onShowToast?: (message: string) => void
+}
+
+const Footer = ({ onShowToast }: FooterProps) => {
     const currentYear = new Date().getFullYear()
-  
+    const [copied, setCopied] = useState(false)
+
+    const handleContactClick = () => {
+        const email = 'lucasdebeterco@gmail.com'
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(() => {
+                setCopied(true)
+                if (onShowToast) {
+                    onShowToast(`E-mail (${email}) copiado para a área de transferência!`)
+                }
+                setTimeout(() => setCopied(false), 3000)
+            }).catch(() => {
+                // Ignore error and proceed to mailto
+            })
+        }
+        window.location.href = `mailto:${email}`
+    }
+
     return (
-        <footer id="contact" className="scroll-mt-16 border-t border-slate-200 bg-white/70 py-12 backdrop-blur dark:border-slate-800 dark:bg-slate-900/50">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-                    <div className="md:col-span-2">
-                        <h3 className="mb-4 text-xl font-bold text-indigo-700 dark:text-indigo-300">
-                            Lucas<span className="text-slate-900 dark:text-white">_Debeterco</span>
-                        </h3>
-                        <p className="mb-4 flex max-w-md flex-col text-slate-600 dark:text-slate-400">
-                            <span>Developed by Lucas Debeterco</span>
-                            Built with Vite, React and TailwindCSS.
+        <footer className="border-t border-[#E2E8F0] bg-white py-12" id="contato">
+            <div className="mx-auto max-w-[1140px] px-6">
+                <div className="flex flex-wrap items-center justify-between gap-8 pb-10">
+                    <div>
+                        <div className="flex items-center font-heading text-xl font-extrabold text-[#0F172A]">
+                            <span>Lucas</span>
+                            <span className="text-[#E20D34]">_Debeterco</span>
+                        </div>
+                        <p className="mt-1.5 text-xs text-[#64748B]">
+                            Senior Software Engineer • Disponível para projetos e conexões.
                         </p>
-                        <div className="flex space-x-4">
-                            <a 
-                                href="https://github.com/lucasdebeterco" 
-                                target="_blank" 
+                    </div>
+
+                    <div className="flex items-center gap-4">
+                        <div className="flex items-center space-x-3">
+                            <a
+                                href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/"
+                                target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
-                                aria-label="GitHub"
-                            >
-                                <Github size={20} />
-                            </a>
-                            <a 
-                                href="https://www.linkedin.com/in/lucas-wamser-rosa-debeterco/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
+                                className="rounded-lg border border-[#E2E8F0] p-2 text-[#64748B] transition hover:border-[#0A66C2] hover:bg-[#0A66C2] hover:text-white"
                                 aria-label="LinkedIn"
                             >
-                                <Linkedin size={20} />
+                                <FaLinkedin size={18} />
                             </a>
-                            <a 
-                                href="https://instagram.com/lucasdebeterco/" 
-                                target="_blank" 
+                            <a
+                                href="https://github.com/lucasdebeterco"
+                                target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
+                                className="rounded-lg border border-[#E2E8F0] p-2 text-[#64748B] transition hover:border-[#24292F] hover:bg-[#24292F] hover:text-white"
+                                aria-label="GitHub"
+                            >
+                                <FaGithub size={18} />
+                            </a>
+                            <a
+                                href="https://instagram.com/lucasdebeterco/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="rounded-lg border border-[#E2E8F0] p-2 text-[#64748B] transition hover:border-[#E1306C] hover:bg-[#E1306C] hover:text-white"
                                 aria-label="Instagram"
                             >
-                                <Instagram size={20} />
-                            </a>
-                            <a 
-                                href="mailto:lucasdebeterco@gmail.com" 
-                                className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
-                                aria-label="Email"
-                            >
-                                <Mail size={20} />
+                                <FaInstagram size={18} />
                             </a>
                         </div>
-                    </div>
-          
-                    <div>
-                        <h4 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">Quick Links</h4>
-                        <ul className="space-y-2">
-                            <li>
-                                <a href="#about" className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#skills" className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">
-                                    Skills
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#experience" className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">
-                                    Experience
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#projects" className="text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">
-                                    Projects
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-          
-                    <div>
-                        <h4 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">Contact Me</h4>
-                        <div className="space-y-3">
-                            <p className="text-slate-600 dark:text-slate-400">
-                                Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
-                            </p>
-                            <a 
-                                href="mailto:lucasdebeterco@gmail.com" 
-                                className="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700"
-                            >
-                                Get In Touch
-                            </a>
-                        </div>
+
+                        <button
+                            onClick={handleContactClick}
+                            className="inline-flex items-center gap-1.5 rounded-lg bg-[#E20D34] px-4 py-2 font-heading text-xs font-bold text-white shadow-sm transition hover:bg-[#C1082A] hover:shadow-md active:scale-95"
+                        >
+                            {copied ? <Check size={14} /> : <Mail size={14} />}
+                            <span>Contatar via E-mail</span>
+                        </button>
                     </div>
                 </div>
-        
-                <div className="mt-12 border-t border-slate-200 pt-8 text-center dark:border-slate-700">
-                    <p className="flex items-center justify-center text-slate-600 dark:text-slate-400">
-                        © {currentYear} Lucas Debeterco. All rights reserved.
-                    </p>
+
+                <div className="border-t border-[#E2E8F0] pt-6 text-center text-xs text-[#64748B]">
+                    © {currentYear} Lucas Debeterco. Desenvolvido para apresentação interna e externa CI&amp;T.
                 </div>
             </div>
         </footer>

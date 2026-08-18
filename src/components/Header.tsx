@@ -1,106 +1,98 @@
-import { Menu, Moon, Sun, X } from 'lucide-react'
-import { useEffect,useState } from 'react'
+import { Check, Download, Mail, Menu, X } from 'lucide-react'
+import { useState } from 'react'
 
-const Header = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false)
+interface HeaderProps {
+    onShowToast?: (message: string) => void
+}
+
+const Header = ({ onShowToast }: HeaderProps) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-    useEffect(() => {
-        // Check for user preference
-        const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-        const savedTheme = localStorage.getItem('theme')
-    
-        if (savedTheme === 'dark' || (!savedTheme && userPrefersDark)) {
-            setIsDarkMode(true)
-            document.documentElement.classList.add('dark')
-        }
-    }, [])
-
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode)
-        if (isDarkMode) {
-            document.documentElement.classList.remove('dark')
-            localStorage.setItem('theme', 'light')
-        } else {
-            document.documentElement.classList.add('dark')
-            localStorage.setItem('theme', 'dark')
-        }
-    }
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
+    const [copied, setCopied] = useState(false)
 
     const navLinks = [
-        { name: 'About', href: '#about' },
-        { name: 'Skills', href: '#skills' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Sobre', href: '#home' },
+        { name: 'Experiência', href: '#experiencia' },
+        { name: 'Tecnologias', href: '#tecnologias' },
+        { name: 'Projetos & Certificações', href: '#projects' },
     ]
 
+    const handleContactClick = () => {
+        const email = 'lucasdebeterco@gmail.com'
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(() => {
+                setCopied(true)
+                if (onShowToast) {
+                    onShowToast(`E-mail (${email}) copiado para a área de transferência!`)
+                }
+                setTimeout(() => setCopied(false), 3000)
+            }).catch(() => {
+                // Ignore error and proceed to mailto
+            })
+        }
+        window.location.href = `mailto:${email}`
+    }
+
     return (
-        <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/80">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-16 items-center justify-between">
-                    <div className="shrink-0">
-                        <a href="#" className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
-                            Lucas<span className="text-slate-900 dark:text-white">_Debeterco</span>
-                        </a>
-                    </div>
-          
-                    {/* Desktop Navigation */}
-                    <nav className="hidden space-x-8 md:flex">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400"
-                            >
-                                {link.name}
-                            </a>
-                        ))}
+        <header className="sticky top-0 z-50 w-full border-b border-[#E2E8F0] bg-white/95 backdrop-blur-md transition-all">
+            <div className="mx-auto flex max-w-[1140px] items-center justify-between px-6 py-3.5">
+                <a href="#home" className="flex items-center font-heading text-xl font-extrabold text-[#0F172A]">
+                    <span>Lucas</span>
+                    <span className="text-[#E20D34]">_Debeterco</span>
+                </a>
+
+                {/* Desktop Navigation */}
+                <nav className="hidden items-center space-x-6 lg:flex">
+                    {navLinks.map((link) => (
                         <a
-                            href="https://drive.google.com/file/d/1zETF-wtU8gd8-6q8k8mGa4N2CYJcFlJD/view?usp=sharing"
-                            target="_blank"
-                            className={`rounded-md bg-indigo-600  px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 hover:text-indigo-600 dark:text-white dark:hover:text-slate-200`} rel="noreferrer"
+                            key={link.name}
+                            href={link.href}
+                            className="text-sm font-semibold text-[#64748B] transition-colors hover:text-[#E20D34]"
                         >
-                            Download CV
+                            {link.name}
                         </a>
-                    </nav>
-          
-                    <div className="flex items-center">
-                        <button
-                            onClick={toggleTheme}
-                            className="rounded-full p-2 text-slate-600 hover:text-indigo-600 focus:outline-none dark:text-slate-300 dark:hover:text-indigo-400"
-                            aria-label="Toggle dark mode"
-                        >
-                            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-                        </button>
-            
-                        {/* Mobile menu button */}
-                        <button
-                            onClick={toggleMenu}
-                            className="ml-2 rounded-md p-2 text-slate-600 hover:text-indigo-600 focus:outline-none dark:text-slate-300 dark:hover:text-indigo-400 md:hidden"
-                            aria-expanded="false"
-                        >
-                            <span className="sr-only">Open main menu</span>
-                            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                        </button>
-                    </div>
+                    ))}
+                </nav>
+
+                <div className="flex items-center gap-3">
+                    <a
+                        href="https://drive.google.com/file/d/1zETF-wtU8gd8-6q8k8mGa4N2CYJcFlJD/view?usp=sharing"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hidden items-center gap-1.5 rounded-lg border border-[#E2E8F0] bg-white px-3.5 py-2 font-heading text-xs font-bold text-[#0F172A] shadow-xs transition hover:border-[#CBD5E1] hover:bg-[#F1F5F9] sm:inline-flex"
+                    >
+                        <Download size={14} className="text-[#E20D34]" />
+                        <span>Download CV</span>
+                    </a>
+
+                    <button
+                        onClick={handleContactClick}
+                        className="inline-flex items-center gap-1.5 rounded-lg bg-[#E20D34] px-4 py-2 font-heading text-xs font-bold text-white shadow-sm transition hover:bg-[#C1082A] hover:shadow-md active:scale-95"
+                    >
+                        {copied ? <Check size={14} /> : <Mail size={14} />}
+                        <span>Fale Comigo</span>
+                    </button>
+
+                    {/* Mobile menu toggle */}
+                    <button
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        className="rounded-lg p-2 text-[#64748B] hover:bg-[#F1F5F9] hover:text-[#0F172A] lg:hidden"
+                        aria-label="Abrir Menu"
+                    >
+                        {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+                    </button>
                 </div>
             </div>
-      
-            {/* Mobile Navigation */}
+
+            {/* Mobile Navigation Dropdown */}
             {isMenuOpen && (
-                <div className="md:hidden">
-                    <div className="space-y-1 border-b border-slate-200 bg-white px-2 pb-3 pt-2 dark:border-slate-800 dark:bg-slate-900 sm:px-3">
+                <div className="border-b border-[#E2E8F0] bg-white px-6 pb-4 pt-2 shadow-lg lg:hidden">
+                    <div className="flex flex-col space-y-2">
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className={`block rounded-md px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-100 hover:text-indigo-600 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-indigo-400 ${link.name === 'Download CV' ? 'bg-indigo-600 hover:bg-indigo-700' : ''}`}
                                 onClick={() => setIsMenuOpen(false)}
+                                className="rounded-md px-3 py-2 text-sm font-semibold text-[#334155] hover:bg-[#F1F5F9] hover:text-[#E20D34]"
                             >
                                 {link.name}
                             </a>
@@ -108,8 +100,11 @@ const Header = () => {
                         <a
                             href="https://drive.google.com/file/d/1zETF-wtU8gd8-6q8k8mGa4N2CYJcFlJD/view?usp=sharing"
                             target="_blank"
-                            className={`block rounded-md bg-indigo-600 px-3  py-2 text-center text-sm font-medium text-white transition-colors hover:bg-indigo-700 hover:text-indigo-600 dark:text-white dark:hover:text-slate-200`} rel="noreferrer"
+                            rel="noreferrer"
+                            className="mt-2 flex items-center justify-center gap-2 rounded-md border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2.5 text-center text-sm font-bold text-[#0F172A] hover:bg-[#F1F5F9]"
+                            onClick={() => setIsMenuOpen(false)}
                         >
+                            <Download size={15} className="text-[#E20D34]" />
                             Download CV
                         </a>
                     </div>
