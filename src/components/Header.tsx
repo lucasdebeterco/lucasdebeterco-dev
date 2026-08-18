@@ -1,5 +1,7 @@
-import { Check, Download, Mail, Menu, X } from 'lucide-react'
+import { Check, Download, Globe, Mail, Menu, X } from 'lucide-react'
 import { useState } from 'react'
+
+import { useLanguage } from '../contexts/LanguageContext'
 
 interface HeaderProps {
     onShowToast?: (message: string) => void
@@ -8,12 +10,13 @@ interface HeaderProps {
 const Header = ({ onShowToast }: HeaderProps) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [copied, setCopied] = useState(false)
+    const { language, setLanguage, t } = useLanguage()
 
     const navLinks = [
-        { name: 'Sobre', href: '#home' },
-        { name: 'Experiência', href: '#experiencia' },
-        { name: 'Tecnologias', href: '#tecnologias' },
-        { name: 'Projetos & Certificações', href: '#projects' },
+        { name: t.header.about, href: '#home' },
+        { name: t.header.experience, href: '#experiencia' },
+        { name: t.header.technologies, href: '#tecnologias' },
+        { name: t.header.projects, href: '#projects' },
     ]
 
     const handleContactClick = () => {
@@ -22,7 +25,7 @@ const Header = ({ onShowToast }: HeaderProps) => {
             navigator.clipboard.writeText(email).then(() => {
                 setCopied(true)
                 if (onShowToast) {
-                    onShowToast(`E-mail (${email}) copiado para a área de transferência!`)
+                    onShowToast(t.header.emailCopied.replace('{email}', email))
                 }
                 setTimeout(() => setCopied(false), 3000)
             }).catch(() => {
@@ -54,14 +57,44 @@ const Header = ({ onShowToast }: HeaderProps) => {
                 </nav>
 
                 <div className="flex items-center gap-3">
+                    {/* Language Switcher */}
+                    <div className="flex items-center rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-0.5">
+                        <button
+                            onClick={() => setLanguage('pt')}
+                            className={`flex items-center gap-1 rounded-md px-2 py-1 text-xs font-bold transition-all ${
+                                language === 'pt'
+                                    ? 'bg-[#E20D34] text-white shadow-xs'
+                                    : 'text-[#64748B] hover:text-[#0F172A]'
+                            }`}
+                            title="Português"
+                            aria-label="Mudar para Português"
+                        >
+                            <span>🇧🇷</span>
+                            <span className="hidden sm:inline">PT</span>
+                        </button>
+                        <button
+                            onClick={() => setLanguage('en')}
+                            className={`flex items-center gap-1 rounded-md px-2 py-1 text-xs font-bold transition-all ${
+                                language === 'en'
+                                    ? 'bg-[#E20D34] text-white shadow-xs'
+                                    : 'text-[#64748B] hover:text-[#0F172A]'
+                            }`}
+                            title="English"
+                            aria-label="Switch to English"
+                        >
+                            <span>🇺🇸</span>
+                            <span className="hidden sm:inline">EN</span>
+                        </button>
+                    </div>
+
                     <a
                         href="https://drive.google.com/file/d/1zETF-wtU8gd8-6q8k8mGa4N2CYJcFlJD/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer"
-                        className="hidden items-center gap-1.5 rounded-lg border border-[#E2E8F0] bg-white px-3.5 py-2 font-heading text-xs font-bold text-[#0F172A] shadow-xs transition hover:border-[#CBD5E1] hover:bg-[#F1F5F9] sm:inline-flex"
+                        className="hidden items-center gap-1.5 rounded-lg border border-[#E2E8F0] bg-white px-3.5 py-2 font-heading text-xs font-bold text-[#0F172A] shadow-xs transition hover:border-[#CBD5E1] hover:bg-[#F1F5F9] md:inline-flex"
                     >
                         <Download size={14} className="text-[#E20D34]" />
-                        <span>Download CV</span>
+                        <span>{t.header.downloadCV}</span>
                     </a>
 
                     <button
@@ -69,7 +102,7 @@ const Header = ({ onShowToast }: HeaderProps) => {
                         className="inline-flex items-center gap-1.5 rounded-lg bg-[#E20D34] px-4 py-2 font-heading text-xs font-bold text-white shadow-sm transition hover:bg-[#C1082A] hover:shadow-md active:scale-95"
                     >
                         {copied ? <Check size={14} /> : <Mail size={14} />}
-                        <span>Fale Comigo</span>
+                        <span>{t.header.contactMe}</span>
                     </button>
 
                     {/* Mobile menu toggle */}
@@ -105,7 +138,7 @@ const Header = ({ onShowToast }: HeaderProps) => {
                             onClick={() => setIsMenuOpen(false)}
                         >
                             <Download size={15} className="text-[#E20D34]" />
-                            Download CV
+                            {t.header.downloadCV}
                         </a>
                     </div>
                 </div>

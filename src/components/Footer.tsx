@@ -2,6 +2,8 @@ import { Check, Mail } from 'lucide-react'
 import { useState } from 'react'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
+import { useLanguage } from '../contexts/LanguageContext'
+
 interface FooterProps {
     onShowToast?: (message: string) => void
 }
@@ -9,6 +11,7 @@ interface FooterProps {
 const Footer = ({ onShowToast }: FooterProps) => {
     const currentYear = new Date().getFullYear()
     const [copied, setCopied] = useState(false)
+    const { t } = useLanguage()
 
     const handleContactClick = () => {
         const email = 'lucasdebeterco@gmail.com'
@@ -16,7 +19,7 @@ const Footer = ({ onShowToast }: FooterProps) => {
             navigator.clipboard.writeText(email).then(() => {
                 setCopied(true)
                 if (onShowToast) {
-                    onShowToast(`E-mail (${email}) copiado para a área de transferência!`)
+                    onShowToast(t.header.emailCopied.replace('{email}', email))
                 }
                 setTimeout(() => setCopied(false), 3000)
             }).catch(() => {
@@ -36,7 +39,7 @@ const Footer = ({ onShowToast }: FooterProps) => {
                             <span className="text-[#E20D34]">_Debeterco</span>
                         </div>
                         <p className="mt-1.5 text-xs text-[#64748B]">
-                            Senior Software Engineer • Disponível para projetos e conexões.
+                            {t.footer.description}
                         </p>
                     </div>
 
@@ -76,13 +79,13 @@ const Footer = ({ onShowToast }: FooterProps) => {
                             className="inline-flex items-center gap-1.5 rounded-lg bg-[#E20D34] px-4 py-2 font-heading text-xs font-bold text-white shadow-sm transition hover:bg-[#C1082A] hover:shadow-md active:scale-95"
                         >
                             {copied ? <Check size={14} /> : <Mail size={14} />}
-                            <span>Contatar via E-mail</span>
+                            <span>{t.footer.contactBtn}</span>
                         </button>
                     </div>
                 </div>
 
                 <div className="border-t border-[#E2E8F0] pt-6 text-center text-xs text-[#64748B]">
-                    © {currentYear} Lucas Debeterco. Desenvolvido para apresentação interna e externa CI&amp;T.
+                    {t.footer.copyright.replace('{year}', String(currentYear))}
                 </div>
             </div>
         </footer>

@@ -1,8 +1,8 @@
 import { ExternalLink, Github, Star } from 'lucide-react'
 import { useMemo, useState } from 'react'
 
+import { useLanguage } from '../contexts/LanguageContext'
 import { courses } from '../data/courses'
-import { professionalProjects } from '../data/professionalProjects'
 import { useGithubRepos } from '../hooks/useGithubRepos'
 import { getGithubRepoOgImage } from '../services/github'
 
@@ -11,10 +11,13 @@ type Tab = 'professional' | 'github' | 'courses'
 const GITHUB_USERNAME = import.meta.env.VITE_GITHUB_USERNAME ?? 'lucasdebeterco'
 const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN
 
-function formatUpdatedAt(iso: string) {
+function formatUpdatedAt(iso: string, lang: 'pt' | 'en') {
     const date = new Date(iso)
     if (Number.isNaN(date.getTime())) return ''
-    return new Intl.DateTimeFormat('pt-BR', { year: 'numeric', month: 'short' }).format(date)
+    return new Intl.DateTimeFormat(lang === 'pt' ? 'pt-BR' : 'en-US', {
+        year: 'numeric',
+        month: 'short',
+    }).format(date)
 }
 
 const ITEMS_PER_PAGE = 12
@@ -22,6 +25,7 @@ const ITEMS_PER_PAGE = 12
 const Projects = () => {
     const [tab, setTab] = useState<Tab>('professional')
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE)
+    const { language, t } = useLanguage()
 
     const { repos, error, isLoading } = useGithubRepos({
         username: GITHUB_USERNAME,
@@ -30,7 +34,9 @@ const Projects = () => {
 
     const allRepos = useMemo(() => {
         const list = repos ?? []
-        return [...list].sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())
+        return [...list].sort(
+            (a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
+        )
     }, [repos])
 
     const displayedRepos = useMemo(
@@ -45,13 +51,14 @@ const Projects = () => {
             <div className="mx-auto max-w-[1140px] px-6">
                 <div className="mb-10">
                     <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-[#E20D34]/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#E20D34]">
-                        Portfólio &amp; Capacitação
+                        {t.projects.badge}
                     </span>
                     <h2 className="font-heading text-3xl font-bold tracking-tight text-[#0F172A] sm:text-4xl">
-                        Featured Projects &amp; <span className="text-[#E20D34]">Certificações</span>
+                        {t.projects.title}
+                        <span className="text-[#E20D34]">{t.projects.titleHighlight}</span>
                     </h2>
                     <p className="mt-2 text-base text-[#64748B]">
-                        Projetos profissionais em produção, repositórios no GitHub e histórico de cursos e certificações concluídos.
+                        {t.projects.subtitle}
                     </p>
                 </div>
 
@@ -65,7 +72,7 @@ const Projects = () => {
                                 : 'text-[#64748B] hover:bg-[#F1F5F9] hover:text-[#0F172A]'
                         }`}
                     >
-                        💼 Professional Projects ({professionalProjects.length})
+                        {t.projects.tabProfessional} ({t.projects.professionalProjects.length})
                     </button>
                     <button
                         onClick={() => setTab('github')}
@@ -75,7 +82,7 @@ const Projects = () => {
                                 : 'text-[#64748B] hover:bg-[#F1F5F9] hover:text-[#0F172A]'
                         }`}
                     >
-                        🐙 GitHub Repositories
+                        {t.projects.tabGithub}
                     </button>
                     <button
                         onClick={() => setTab('courses')}
@@ -85,14 +92,14 @@ const Projects = () => {
                                 : 'text-[#64748B] hover:bg-[#F1F5F9] hover:text-[#0F172A]'
                         }`}
                     >
-                        🎓 Cursos &amp; Certificações ({courses.length})
+                        {t.projects.tabCourses} ({courses.length})
                     </button>
                 </div>
 
                 {/* 1. PROFESSIONAL PROJECTS TAB */}
                 {tab === 'professional' && (
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                        {professionalProjects.map((project) => (
+                        {t.projects.professionalProjects.map((project) => (
                             <div
                                 key={project.title}
                                 className="group flex flex-col justify-between overflow-hidden rounded-xl border border-[#E2E8F0] bg-white shadow-subtle transition-all duration-200 hover:-translate-y-1 hover:border-[#CBD5E1] hover:shadow-card"
@@ -132,7 +139,7 @@ const Projects = () => {
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center font-bold text-[#E20D34] hover:underline"
                                         >
-                                            Live Demo
+                                            {t.projects.liveDemo}
                                             <ExternalLink size={14} className="ml-1" />
                                         </a>
                                     ) : <span />}
@@ -144,7 +151,7 @@ const Projects = () => {
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center font-semibold text-[#64748B] hover:text-[#0F172A]"
                                         >
-                                            Code
+                                            {t.projects.code}
                                             <Github size={14} className="ml-1" />
                                         </a>
                                     ) : null}
@@ -160,8 +167,8 @@ const Projects = () => {
                         <div className="mb-6 flex items-center justify-between">
                             <p className="text-xs text-[#64748B]">
                                 {isLoading
-                                    ? 'Loading repositories…'
-                                    : `Showing ${displayedRepos.length} of ${allRepos.length} repositories`}
+                                    ? t.projects.loadingRepos
+                                    : t.projects.showingRepos(displayedRepos.length, allRepos.length)}
                             </p>
                             <a
                                 href={`https://github.com/${GITHUB_USERNAME}`}
@@ -169,7 +176,7 @@ const Projects = () => {
                                 rel="noreferrer"
                                 className="inline-flex items-center gap-1 text-xs font-bold text-[#E20D34] hover:underline"
                             >
-                                View GitHub profile
+                                {t.projects.viewGithubProfile}
                                 <ExternalLink size={14} />
                             </a>
                         </div>
@@ -220,7 +227,7 @@ const Projects = () => {
                                                 </div>
 
                                                 <p className="mb-4 line-clamp-3 text-xs leading-relaxed text-[#64748B]">
-                                                    {repo.description || 'No description yet.'}
+                                                    {repo.description || t.projects.noDescription}
                                                 </p>
 
                                                 <div className="mb-2 flex flex-wrap gap-1.5">
@@ -230,7 +237,7 @@ const Projects = () => {
                                                         </span>
                                                     ) : null}
                                                     <span className="rounded bg-[#F1F5F9] px-2 py-0.5 text-[11px] font-semibold text-[#64748B]">
-                                                        Updated {formatUpdatedAt(repo.updated_at)}
+                                                        {t.projects.updatedAt} {formatUpdatedAt(repo.updated_at, language)}
                                                     </span>
                                                 </div>
                                             </div>
@@ -244,7 +251,7 @@ const Projects = () => {
                                                     rel="noreferrer"
                                                     className="inline-flex items-center font-bold text-[#E20D34] hover:underline"
                                                 >
-                                                    Live
+                                                    {t.projects.liveDemo}
                                                     <ExternalLink size={14} className="ml-1" />
                                                 </a>
                                             ) : <span />}
@@ -255,7 +262,7 @@ const Projects = () => {
                                                 rel="noreferrer"
                                                 className="inline-flex items-center font-semibold text-[#64748B] hover:text-[#0F172A]"
                                             >
-                                                Code
+                                                {t.projects.code}
                                                 <Github size={14} className="ml-1" />
                                             </a>
                                         </div>
@@ -269,7 +276,7 @@ const Projects = () => {
                                     onClick={() => setVisibleCount((n) => n + ITEMS_PER_PAGE)}
                                     className="inline-flex items-center gap-2 rounded-lg border border-[#E2E8F0] bg-white px-6 py-2.5 font-heading text-xs font-bold text-[#0F172A] shadow-xs transition hover:bg-[#F1F5F9]"
                                 >
-                                    Show more
+                                    {t.projects.showMore}
                                 </button>
                             </div>
                         ) : null}
@@ -295,7 +302,7 @@ const Projects = () => {
                                     </h4>
                                     {course.credentialCode && (
                                         <div className="mb-4 text-xs text-[#64748B]">
-                                            Credencial: <code className="rounded bg-[#F1F5F9] px-1 py-0.5 font-code text-[#0F172A]">{course.credentialCode}</code>
+                                            {t.projects.credentialLabel} <code className="rounded bg-[#F1F5F9] px-1 py-0.5 font-code text-[#0F172A]">{course.credentialCode}</code>
                                         </div>
                                     )}
                                 </div>
@@ -309,7 +316,7 @@ const Projects = () => {
                                         rel="noopener noreferrer"
                                         className="font-bold text-[#E20D34] hover:underline"
                                     >
-                                        Exibir Credencial →
+                                        {t.projects.viewCredential}
                                     </a>
                                 </div>
                             </div>
